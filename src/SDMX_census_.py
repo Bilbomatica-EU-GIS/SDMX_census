@@ -5,12 +5,20 @@ import numpy as np
 from lxml import etree
 import shutil
 
+# --- Entry parameters --- #
+inputfile = "./INPUT/CSV/DK_ESTAT_DF_CENSUS_GRID_2021_2.0.csv"
+outputfile = "gpkg"
+# Metadata parameters
+inputMetadataFile = "./INPUT/Metadata/CENSUS_21NESMS_A_NL_2021_0000.sdmx.xml"
+metadataTemplate_filename = "./INPUT/Templates/CENSUS_21NESMS_A_NL_2021_0000 - EJEMPLO4.xml"
+outputMetadataFile = "./OUTPUT/CENSUS_21NESMS_A_NL_2021_0000_metadata.xml"
+
 def main():
     '''Based on user input file and selected output format, it runs a different function'''
-    global countryCode, start_date, inputfile,outputfile,extension
+    global countryCode, start_date, extension
     lists()
-    inputfile = input("Select a csv or SDMX file from your computer: ")
-    outputfile = input("Select the export file format (gpkg/SDMX/GML):")
+    #inputfile = input("Select a csv or SDMX file from your computer: ")
+    #outputfile = input("Select the export file format (gpkg/SDMX/GML):")
     extension = inputfile[-3:]
     if extension == 'csv':
         readCSV()
@@ -77,6 +85,7 @@ def EU_or_Country(df):
     else:
         if outputfile == 'gpkg':
             df['Flag'] = 0
+            createMetadata(df)
             duplicateSTAT(df)
         if outputfile == 'SDMX':
             df2SDMX(df)
@@ -278,5 +287,49 @@ def df2SDMX(df):
     file = open('OUTPUT/'  + cntr_name + '_sdmxoutput_ESTAT_DF_CENSUS_GRID_2021_' + datetime.today().strftime('%Y%m%d%H%M%S')  + '.xml','wb')
     file.write(xmlComplet)
 
+# Function to create the metadata
+def createMetadata(df):
+    metadata_input = getMetadatas(inputMetadataFile)
+    metadata_temp = getMetadatas(metadataTemplate_filename)
+    NAMESPACES_input = metadata_input.nsmap
+    if (NAMESPACES_input[None]):
+        NAMESPACES_input.pop(None) #to remove all None namespaces
+    NAMESPACES_temp = metadata_temp.nsmap
+    #if (NAMESPACES_temp[None]):
+    #    NAMESPACES_temp.pop(None) #to remove all None namespaces
+
+    # Adding values to Metadata
+    #File Identifier
+    identifier_value = metadata_input.xpath("//*[local-name() = 'ID']")[0].text
+    identifier_temp = metadata_temp.xpath('//gmd:fileIdentifier/gco:CharacterString', namespaces=NAMESPACES_temp)
+    identifier_temp[0].text = identifier_value
+    #Point of contact
+    contactOrgan_value = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONTACT_ORGANISATION']/genericmetadata:Value", namespaces=NAMESPACES_input)[0].text
+    organUnit_value = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='ORGANISATION_UNIT']/genericmetadata:Value", namespaces=NAMESPACES_input)[0].text
+    pointContact_temp = metadata_temp.xpath('//gmd:pointOfContact//gmd:organisationName/gco:CharacterString', namespaces=NAMESPACES_temp)
+    pointContact_temp[0].text = contactOrgan_value + ", " + organUnit_value
+    #Contact email
+    contactMail_value = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONTACT_EMAIL']/genericmetadata:Value", namespaces=NAMESPACES_input)[0].text
+    contactMail_temp = metadata_temp.xpath('//gmd:pointOfContact//gmd:electronicMailAddress/gco:CharacterString', namespaces=NAMESPACES_temp)
+    contactMail_temp[0].text = contactMail_value
+
+    # Metadata completed
+    metadataComplet = etree.tostring(metadata_temp, pretty_print=True)
+    with open(outputMetadataFile, "wb") as f:
+        f.write(metadataComplet)
+
+
+# Function to get the metadata template
+def getMetadatas(metadata_filename):
+    try:
+        xmldata = etree.parse(metadata_filename)
+    except IOError:
+        print ("File not found: " + metadata_filename)
+        quit()
+    root_metadataTemp = xmldata.getroot()
+    return root_metadataTemp
+
+
 if __name__ == "__main__":
     main()
+
