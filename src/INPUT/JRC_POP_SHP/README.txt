@@ -1,0 +1,1 @@
+Folder to allocate the JRC_POPULATION_2018 shape file
