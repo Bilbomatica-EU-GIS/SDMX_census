@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata SDMXGenericMetadata.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>CENSUS_21NESMS_A</ID>
+        <Test>false</Test>
+        <Name></Name>
+        <Prepared>2022-10-25T15:14:08</Prepared>
+        <Sender id="FR1">
+            <Contact/>
+        </Sender>
+        <DataSetID></DataSetID>
+        <DataSetAction></DataSetAction>
+        <Extracted></Extracted>
+        <ReportingBegin>2021-01-01T00:00:00</ReportingBegin>
+        <ReportingEnd>2021-12-31T00:00:00</ReportingEnd>
+        <DataSetAgency>ESTAT</DataSetAgency>
+    </Header>
+    <genericmetadata:MetadataSet>
+        <genericmetadata:MetadataStructureRef>ESMS_CENSUS_MSD</genericmetadata:MetadataStructureRef>
+        <genericmetadata:MetadataStructureAgencyRef>ESTAT</genericmetadata:MetadataStructureAgencyRef>
+        <genericmetadata:ReportRef>ESMS_REPORT_FULL</genericmetadata:ReportRef>
+        <genericmetadata:AttributeValueSet>
+            <genericmetadata:TargetRef>FULL_ESMS</genericmetadata:TargetRef>
+            <genericmetadata:TargetValues>
+                <genericmetadata:ComponentValue component="TIME_PERIOD" object="TimeDimension">2021-A0</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATA_PROVIDER" object="DataProvider">FR1</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATAFLOW" object="DataFlow">CENSUS_21NESMS_A:1.0</genericmetadata:ComponentValue>
+            </genericmetadata:TargetValues>
+            <genericmetadata:ReportedAttribute conceptID="CONTACT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_ORGANISATION">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ORGANISATION_UNIT">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_NAME">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FUNCT">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_MAIL">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_EMAIL">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_PHONE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FAX">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="META_UPDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="META_CERTIFIED">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_POSTED">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_LAST_UPDATE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PRES">
+                <genericmetadata:Value>&lt;p&gt;Description of the disseminated metadata.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="DATA_DESCR">
+                    <genericmetadata:Value>&lt;p&gt;The data present the results of the 2021 EU census on population and housing, following Regulation (EC) 763/2008; Regulation (EU) 2017/543; Regulation (EU) 2017/712 and Regulation (EU) 2017/881.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="COVID_METH">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CLASS_SYSTEM">
+                    <genericmetadata:Value>&lt;p&gt;The following classification systems should be used:&lt;/p&gt;
+&lt;p&gt;1. Nomenclature of Territorial Units for Statistics (NUTS 2021)&lt;/p&gt;
+&lt;p&gt;2. International Standard Classification of Education (ISCED-2011)&lt;/p&gt;
+&lt;p&gt;3. International standard classification of occupations (ISCO-08)&lt;/p&gt;
+&lt;p&gt;4. Statistical Classification of Economic Activities in the European Community (NACE Rev 2)&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_SECTOR">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF">
+                    <genericmetadata:Value>&lt;p&gt;The information is given separately for each census topic.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_GEO">
+                        <genericmetadata:Value>&lt;p&gt;‘Usual residence’ is the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage.&lt;/p&gt;
+&lt;p&gt;The following persons alone shall be considered to be usual residents of the geographical area in question:&lt;/p&gt;
+&lt;p&gt;(i)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; those who have lived in their place of usual residence for a continuous period of at least 12 months before the reference date&lt;/p&gt;
+&lt;p&gt;(ii)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; those who arrived in their place of usual residence during the 12 months before the reference date with the intention of staying there for at least one year&lt;/p&gt;
+&lt;p&gt;Where the circumstances described in point (i) or (ii) cannot be established, ‘usual residence’ shall mean the place of legal or registered residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SEX">
+                        <genericmetadata:Value>&lt;p&gt;‘Sex’ refers to the biological and physiological characteristics that define men and women.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_AGE">
+                        <genericmetadata:Value>&lt;p&gt;The age reached in completed years at the reference date.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_LMS">
+                        <genericmetadata:Value>&lt;p&gt;Marital status is defined as the (legal) conjugal status of an individual in relation to the marriage laws (or customs) of the country (that is the de jure status).&lt;/p&gt;
+&lt;p&gt;A person shall be classified according to his/her most recently acquired legal marital status at the reference date.&lt;/p&gt;
+&lt;p&gt;In Member States where the legislation includes provisions for married partners or partners in registered partnership to be ‘legally separated’, such ‘legally separated’ persons are classified under ‘Married or in registered partnership’.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_FST">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The family nucleus is defined in a narrow sense; that is as two or more persons who belong to the same household and who are related as husband and wife, as partners in a registered partnership, as partners in a consensual union, or as parent and child. Thus, a family comprises a couple without children or a couple with one or more children, or a lone parent with one or more children. This family concept limits relationships between children and adults to direct (first-degree) relationships, that is, between parents and children.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_HST">
+                        <genericmetadata:Value>&lt;p&gt;Private households are identified using the ‘housekeeping concept’ or, if not possible, using the ‘household- dwelling concept’.&lt;/p&gt;
+&lt;p&gt;1) Housekeeping concept&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;According to the housekeeping concept, a private household is either: (a) a one-person household, that is a person who lives alone in a separate housing unit or who occupies, as a lodger, a separate room (or rooms) of a housing unit but does not join with any of the other occupants of the housing unit to form part of a multiperson household as defined below; or (b) a multiperson household, that is a group of two or more persons who combine to occupy the whole or part of a housing unit and to provide themselves with food and possibly other essentials for living. Members of the group may pool their incomes to a greater or lesser extent.&lt;/p&gt;
+&lt;p&gt;2) Household-dwelling concept&lt;/p&gt;
+&lt;p&gt;The household-dwelling concept considers all persons living in a housing unit to be members of the same household, such that there is one household per occupied housing unit.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_CAS">
+                        <genericmetadata:Value>&lt;p&gt;‘Current activity status’ is the current relationship of a person to economic activity, based on a reference period of one week, which may be either a specified, recent, fixed, calendar week, or the last complete calendar week, or the last seven days prior to enumeration.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_OCC">
+                        <genericmetadata:Value>&lt;p&gt;Occupation refers to the type of work done in a job. ‘Type of work’ is described by the main tasks and duties of the work.&lt;/p&gt;
+&lt;p&gt;Persons are classified according to the occupation they had during their most recent employment. The categories included in the breakdown 'occupation' correspond to the major groups of the ISCO-08 (COM) classification.&lt;/p&gt;
+&lt;p&gt;Persons under the age of 15 years, as well as persons aged 15 or over that were:&lt;/p&gt;
+&lt;p&gt;— not economically active during the reference week, or&lt;/p&gt;
+&lt;p&gt;— unemployed, never worked before (i.e. they have never been employed in their lives)&lt;/p&gt;
+&lt;p&gt;are classified under 'not applicable'.&lt;/p&gt;
+&lt;p&gt;The allocation of a person within the breakdowns of the topics 'Occupation', 'Industry' and 'Status in employment' is based on the same job.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_IND">
+                        <genericmetadata:Value>&lt;p&gt;Industry (branch of economic activity) refers to the kind of production or activity of the establishment or similar unit in which the job of an employed person is located.&lt;/p&gt;
+&lt;p&gt;Persons doing more than one job shall be allocated an industry (branch of economic activity) based on their main job, which is to be identified according to the time spent on the job or (if not available) the income received.&lt;br /&gt; The breakdown by industry is available for persons aged 15 or over that were:&lt;br /&gt; — employed during the reference week, or&lt;br /&gt; — unemployed during the reference week, but have ever been in employment&lt;br /&gt; Persons are classified according to the industry they worked in during their most recent employment. The categories included in the breakdown 'industry' list the 21 sections of the NACE Rev. 2 classification and appropriate aggregates&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SIE">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;An ‘employee’ is a person who works in a ‘paid employment’ job, that is a job where the explicit or implicit contract of employment gives the incumbent a basic remuneration, which is independent of the revenue of the unit for which he/ she works. An ‘employer’ is a person who, working on his or her own account or with a small number of partners, holds a ‘self- employment’ job and, in this capacity, on a continuous basis (including the reference week) has engaged one or more persons to work for him/her as ‘employees’.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_LPW">
+                        <genericmetadata:Value>&lt;p&gt;The location of the place of work is the geographical area in which a currently employed person does his/her job.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;The place of work of those mostly working at home is the same as their usual residence. The term ‘working’ refers to work done as an ‘employed person’ as defined under the topic ‘Current activity status’. ‘Mostly’ working at home means that the person spends all or most of the time working at home, and less, or no, time in a place of work other than at home.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Information on persons who do not have a fixed place of work but who report to a fixed address at the beginning of their work period (for example bus drivers, airline crew, operators of street market stalls that are not removed at the end of the workday) refer to that address. This group may also include individuals who travel to work, on a regular basis, across the border to a neighbouring country. Breakdown ‘No fixed place of work (inside or outside the Member State)’ includes all persons without fixed place of work but will also refer to persons such as sailors, fishermen and offshore workers for whom it may not be possible to allocate the place of work.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_EDU">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;Educational attainment refers to the highest level successfully completed in the educational system of the country where the education was received. All education which is relevant to the completion of a level is taken into account even if this was provided outside schools and universities.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_LOC">
+                        <genericmetadata:Value>&lt;p&gt;A locality is defined as a distinct population cluster that is an area defined by population living in neighboring or contiguous buildings.&lt;/p&gt;
+&lt;p&gt;Such buildings may be either:&lt;br /&gt; (a) form a continuous built-up area with a clearly recognizable street formation; or&lt;br /&gt; (b) though not part of such a built-up area, comprise a group of buildings to which a locally recognized place name is uniquely attached; or&lt;br /&gt; (c) though not meeting either of the above two criteria, constitute a group of buildings, none of which is separated from its nearest neighbor by more than 200 meters.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POB">
+                        <genericmetadata:Value>&lt;p&gt;Information on the ‘Place of birth’ is collected according to the place of usual residence of the mother at the time of the birth, or, if not available, the place in which the birth took place, on the basis of international boundaries existing on 1 January 2021.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;For reporting countries that are EU Member States, the sub-category under the category 'other EU Member State' that refers to their Member State does not apply. For reporting countries that are not EU Member States, the category 'Other EU Member State' shall be read as 'EU Member State'.&lt;br /&gt; The category 'Information not classifiable according to current borders' covers those persons whose country of birth existed at the time of the birth, but no longer exists at the time of the census, and who cannot be allocated uniquely to one country existing at the time of the census, i.e. according to current borders.&lt;br /&gt; The category 'outside any country' covers persons for whom the usual residence of the mother at the time of the birth is not known and who where born outside the borders of any country, for example at sea or in the air.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_COC">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;Citizenship is defined as the particular legal bond between an individual and his/her State, acquired by birth or naturalization, whether by declaration, option, marriage or other means according to the national legislation. A person with two or more citizenships is allocated to only one country of citizenship, to be determined in the following order of precedence:&lt;/p&gt;
+&lt;p&gt;1. reporting country&lt;/p&gt;
+&lt;p&gt;2. if the person does not have the citizenship of the reporting country: other EU Member State&lt;/p&gt;
+&lt;p&gt;3. if the person does not have the citizenship of another EU Member State: other country outside the European Union.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;'EU Member State' means a country that is a member of the European Union on 1 January 2021. The list of countries in the breakdown 'Country of citizenship' shall only apply for statistical purposes.&lt;br /&gt; For reporting countries that are EU Member States, the sub-category of the category 'citizenship not of reporting country, but other EU Member State' that refers to their Member State does not apply. For reporting countries that are not EU Member States, the category 'citizenship not of reporting country, but other EU Member State' shall be changed to 'citizenship of an EU Member State'.&lt;br /&gt; Persons who are neither citizens of any country nor stateless and who have some but not all of the rights and duties associated with citizenship shall be classified under 'recognised non-citizens'.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_YAE">
+                        <genericmetadata:Value>&lt;p&gt;The year of arrival is the calendar year in which a person most recently established usual residence in the country.&lt;/p&gt;
+&lt;p&gt;The data for 2021 refer to the time span between 1 January 2021 and the reference date.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_ROY">
+                        <genericmetadata:Value>&lt;p&gt;The relationship between the current place of usual residence and the place of usual residence one year prior to the census.&lt;/p&gt;
+&lt;p&gt;For all persons that have changed their usual residence more than once within the year prior to the reference date, the previous place of usual residence is the last usual residence from which they moved to their current place of usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_HAR">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The topic ‘Housing arrangements’ covers the whole population and refers to the type of housing in which a person usually resides at the time of the census. This covers all persons who are usual residents in different types of living quarters, or who do not have a usual residence and stay temporarily in some type of living quarters, or who are roofless, sleeping rough or in emergency shelters, when the census is taken.&lt;/p&gt;
+&lt;p&gt;'Other housing units' are huts, cabins, shacks, shanties, caravans, houseboats, barns, mills, caves or any other shelter used for human habitation at the time of the census, irrespective if it was designed for human habitation.&lt;br /&gt; 'Collective living quarters' are premises which are designed for habitation by large groups of individuals or several households and which are used as the usual residence of at least one person at the time of the census.&lt;br /&gt; 'Occupied conventional dwellings', 'other housing units' and 'collective living quarters' together represent ‘living quarters'. Any 'living quarter' must be the usual residence of at least one person.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;The sum of occupied conventional dwellings and other housing units represents 'housing units'.&lt;br /&gt; The homeless (persons who are not usual residents in any living quarter category) can be persons living in the streets without a shelter that would fall within the scope of living quarters (primary homelessness) or persons moving frequently between temporary accommodation (secondary homelessness).&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TFN">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The family nucleus is defined in a narrow sense; that is as two or more persons who belong to the same household and who are related as husband and wife, as partners in a registered partnership, as partners in a consensual union, or as parent and child. Thus a family comprises a couple without children or a couple with one or more children, or a lone parent with one or more children. This family concept limits relationships between children and adults to direct (first-degree) relationships, that is, between parents and children.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Child (son/daughter) refers to a blood, step- or adopted son or daughter (regardless of age or marital status) who has usual residence in the household of at least one of the parents, and who has no partner or own children in the same household. Foster children are not included. A son or daughter who lives with a spouse, with a registered partner, with a partner in a consensual union, or with one or more own children, is not considered to be a child. A child who alternates between two households (for instance if his or her parents are divorced) shall consider the one where he or she spends the majority of the time as his or her household. Where an equal amount of time is spent with both parents the household shall be the one where the child is found at the time on census night.&lt;br /&gt; The term couple shall include married couples, couples in registered partnerships, and couples who live in a consensual union.&lt;br /&gt; Registered partnerships are reported only by countries that have a legal framework regulating partnerships that:&lt;br /&gt; (a) lead to legal conjugal obligations between two persons;&lt;br /&gt; (b) are not marriages;&lt;br /&gt; (c) prevent persons to commit themselves into multiple partnerships with different partners.&lt;br /&gt; Two persons are considered to be partners in a 'consensual union' when they&lt;br /&gt; — belong to the same household, and&lt;br /&gt; — have a marriage-like relationship with each other, and&lt;br /&gt; — are not married to or in a registered partnership with each other.&lt;br /&gt; 'Skip-generation households' (households consisting of a grandparent or grandparents and one or more grandchildren, but no parent of those grandchildren) are not included in the definition of a family.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SFN">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The family nucleus is defined in a narrow sense; that is as two or more persons who belong to the same household and who are related as husband and wife, as partners in a registered partnership, as partners in a consensual union, or as parent and child. Thus a family comprises a couple without children or a couple with one or more children, or a lone parent with one or more children. This family concept limits relationships between children and adults to direct (first-degree) relationships, that is, between parents and children.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TPH">
+                        <genericmetadata:Value>&lt;p&gt;Private households are identified using the ‘housekeeping concept’ or, if not possible, using the ‘household- dwelling concept’.&lt;/p&gt;
+&lt;p&gt;1) Housekeeping concept&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;According to the housekeeping concept, a private household is either: (a) a one-person household, that is a person who lives alone in a separate housing unit or who occupies, as a lodger, a separate room (or rooms) of a housing unit but does not join with any of the other occupants of the housing unit to form part of a multiperson household as defined below; or (b) a multiperson household, that is a group of two or more persons who combine to occupy the whole or part of a housing unit and to provide themselves with food and possibly other essentials for living. Members of the group may pool their incomes to a greater or lesser extent.&lt;/p&gt;
+&lt;p&gt;2) Household-dwelling concept&lt;/p&gt;
+&lt;p&gt;The household-dwelling concept considers all persons living in a housing unit to be members of the same household, such that there is one household per occupied housing unit.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SPH">
+                        <genericmetadata:Value>&lt;p&gt;Private households are identified using the ‘housekeeping concept’ or, if not possible, using the ‘household- dwelling concept’.&lt;/p&gt;
+&lt;p&gt;1) Housekeeping concept&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;According to the housekeeping concept, a private household is either: (a) a one-person household, that is a person who lives alone in a separate housing unit or who occupies, as a lodger, a separate room (or rooms) of a housing unit but does not join with any of the other occupants of the housing unit to form part of a multiperson household as defined below; or (b) a multiperson household, that is a group of two or more persons who combine to occupy the whole or part of a housing unit and to provide themselves with food and possibly other essentials for living. Members of the group may pool their incomes to a greater or lesser extent.&lt;/p&gt;
+&lt;p&gt;2) Household-dwelling concept&lt;/p&gt;
+&lt;p&gt;The household-dwelling concept considers all persons living in a housing unit to be members of the same household, such that there is one household per occupied housing unit.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;'Primary homeless persons' are persons living in the streets without a shelter that would fall within the scope of living quarters.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TSH">
+                        <genericmetadata:Value>&lt;p&gt;The topic ‘Tenure status of households’ refers to the arrangements under which a private household occupies all or part of a housing unit.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TLQ">
+                        <genericmetadata:Value>&lt;p&gt;A living quarter is housing which is the usual residence of one or more persons.&lt;/p&gt;
+&lt;p&gt;'Conventional dwellings' are structurally separate and independent premises at fixed locations which are designed for permanent human habitation and are, at the reference date, either used as a residence, or vacant, or reserved for seasonal or secondary use.&lt;br /&gt; 'Separate' means surrounded by walls and covered by a roof or ceiling so that one or more persons can isolate themselves. 'Independent' means having direct access from a street or a staircase, passage, gallery or grounds.&lt;br /&gt; 'Other housing units' are huts, cabins, shacks, shanties, caravans, houseboats, barns, mills, caves or any other shelter used for human habitation at the time of the census, irrespective if it was designed for human habitation.&lt;br /&gt; 'Collective living quarters' are premises which are designed for habitation by large groups of individuals or several households and which are used as the usual residence of at least one person at the time of the census.&lt;br /&gt; 'Occupied conventional dwellings', 'other housing units' and 'collective living quarters' together represent‘living quarters'. Any 'living quarter' must be the usual residence of at least one person.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_OCS">
+                        <genericmetadata:Value>&lt;p&gt;‘Occupied conventional dwellings’ are conventional dwellings which are the usual residence of one or more persons at the time of the census. ‘Unoccupied conventional dwellings’ are conventional dwellings which are not the usual residence of any person at the time of the census.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_OWS">
+                        <genericmetadata:Value>&lt;p&gt;‘Type of ownership’ refers to the ownership of the dwelling and not to that of the land on which the dwelling stands. It shows the tenure arrangements under which the dwelling is occupied.&lt;/p&gt;
+&lt;p&gt;'Owner-occupied dwellings' are those where at least one occupant of the dwelling owns parts or the whole of the dwelling. 'Cooperative ownership' refers to ownership within the framework of a housing cooperative.&lt;br /&gt; 'Rented dwellings' are those where at least one occupant pays a rent for the occupation of the dwelling, and where no occupant owns parts or the whole of the dwelling.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_NOC">
+                        <genericmetadata:Value>&lt;p&gt;The number of occupants of a housing unit is the number of people for whom the housing unit is the usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_UFS">
+                        <genericmetadata:Value>&lt;p&gt;Useful floor space is defined as the floor space measured inside the outer walls excluding non-habitable cellars and attics and, in multi-dwelling buildings, all common spaces; or the total floor space of rooms falling under the concept of 'room'.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_NOR">
+                        <genericmetadata:Value>&lt;p&gt;A ‘room’ is defined as a space in a housing unit enclosed by walls reaching from the floor to the ceiling or roof, of a size large enough to hold a bed for an adult (4 square meters at least) and at least 2 meters high over the major area of the ceiling.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_DFS">
+                        <genericmetadata:Value>&lt;p&gt;The topic ‘Density standard (floor space)’ relates the useful floor space in square meters to the number of occupants, as specified under the topic ‘Number of occupants’.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_DRM">
+                        <genericmetadata:Value>&lt;p&gt;The topic ‘Density standard (number of rooms)’ relates the number of rooms to the number of occupants, as specified under the topic ‘Number of occupants’.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_WSS">
+                        <genericmetadata:Value>&lt;p&gt;Whether the conventional dwelling is equipped with piped water.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOI">
+                        <genericmetadata:Value>&lt;p&gt;Whether the conventional dwelling is equipped with toilet facilities.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_BAT">
+                        <genericmetadata:Value>&lt;p&gt;Whether the conventional dwelling is equipped with bathing facilities.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOH">
+                        <genericmetadata:Value>&lt;p&gt;Conventional dwelling is considered as centrally heated if heating is provided either from a community heating centre or from an installation built in the building or in the conventional dwelling, established for heating purposes, without regard to the source of energy.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOB">
+                        <genericmetadata:Value>&lt;p&gt;The topic ‘Dwellings by type of building’ refers to the number of dwellings in the building in which the dwelling is placed.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POC">
+                        <genericmetadata:Value>&lt;p&gt;The topic ‘Dwellings by period of construction’ refers to the year when the building in which the dwelling is placed was completed.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;The EU programme for the 2021 population and housing censuses includes data on persons, private households, family nuclei, conventional dwellings and living quarters.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_POP">
+                    <genericmetadata:Value>&lt;p&gt;The persons enumerated in the 2021 census are those who were usually resident in the territory of the reporting country at the census reference date.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REF_AREA">
+                    <genericmetadata:Value>&lt;p&gt;Data are available at different levels of geographical detail in EU countries: national, NUTS2/NUTS3 regions and local administrative units (LAU), grids.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Data refer to the situation in the reporting country at the census reference date.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="BASE_PER">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="UNIT_MEASURE">
+                <genericmetadata:Value>&lt;p&gt;Counts of statistical units should be expressed in numbers and where is needed rate per inhabitants enumerated in the country.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REF_PERIOD">
+                <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="EU_REF_DATE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NAT_REF_DATE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DIFF_REF_DATES">
+                    <genericmetadata:Value>&lt;p&gt;No differences.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="INST_MANDATE">
+                <genericmetadata:Value>&lt;p&gt;Law, set of rules or other formal set of instructions assigning responsibility as well as the authority to an organization for the collection, processing, and dissemination of census statistics.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_LA_OA">
+                    <genericmetadata:Value>&lt;p&gt;National legal background for the population and housing censuses, as requested by Reg. 2017/881, Annex point 1.1.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="INST_MAN_RESP">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_SHAR">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="CONF">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONF_POLICY">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONF_DATA_TR">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REL_POLICY">
+                <genericmetadata:Value>&lt;p&gt;Rules for disseminating statistical data to all interested parties.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The schedule of census release dates.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_ACCESS">
+                    <genericmetadata:Value>&lt;p&gt;Access to the release calendar information at national level.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_POL_US_AC">
+                    <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;In line with the Community legal framework and the&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/documents/4031688/8971242/KS-02-18-142-EN-N.pdf/e7f85f07-91db-4312-8118-f729c75878c7" target="_blank"&gt;European Statistics Code of Practice&amp;nbsp;&lt;/a&gt;Eurostat disseminates European statistics on&amp;nbsp;its website respecting professional independence and in an objective, professional and transparent manner in which all users are treated equitably.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="FREQ_DISS">
+                <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCESSIBILITY_CLARITY">
+                <genericmetadata:Value>&lt;p&gt;The conditions and modalities by which users can access, use and interpret census data.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="NEWS_REL">
+                    <genericmetadata:Value>&lt;p&gt;Press release(s) concerning the 2021 census, as part of the requirements of Regulation 2017/881, Annex point 3.4.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUBLICATIONS">
+                    <genericmetadata:Value>&lt;p&gt;Publications concerning the 2021 census, as part of the requirements of Regulation 2017/881, Annex point 3.4.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ONLINE_DB">
+                    <genericmetadata:Value>&lt;p&gt;On-line database on the 2021 census, as part of the requirements of Reg. 2017/881, Annex point 3.4.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="MICRO_DAT_ACC">
+                    <genericmetadata:Value>&lt;p&gt;Census data should be accessible as microdata, as part of the requirements of Regulation 2017/881, Annex point 3.4.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DISS_OTHER">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DOC_METHOD">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_DOC">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="QUALITY_MGMNT">
+                <genericmetadata:Value>&lt;p&gt;Systems and frameworks in place within an organization to manage the quality of census products and processes.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSURE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSMNT">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="COVERAGE_ASSMNT">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="POST_ENUM_SURVEY">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="RELEVANCE">
+                <genericmetadata:Value>&lt;p&gt;The degree to which census information meet current and potential needs of the users.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="USER_NEEDS">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="USER_SAT">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPLETENESS">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCURACY">
+                <genericmetadata:Value>&lt;p&gt;Accuracy is the degree to which the information correctly describes the usual resident population as it was designed to measure.&lt;/p&gt;
+&lt;p&gt;Reliability is the degree of closeness of initial estimates to subsequent estimated values.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_GEO">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_SEX">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_AGE">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_LMS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_FST">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_HST">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_CAS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_OCC">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_IND">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_SIE">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_LPW">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_EDU">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_LOC">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_POB">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_COC">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_YAE">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_ROY">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_HAR">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_TFN">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_SFN">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_TPH">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_SPH">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_TSH">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_TLQ">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_OCS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_OWS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_NOC">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_UFS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_NOR">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_DFS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_DRM">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_WSS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_TOI">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL_BAT">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COVID_ACCURACY">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="SAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable for register-based and traditional censuses.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NONSAMPLING_ERR">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="TIMELINESS_PUNCT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="TIMELINESS">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUNCTUALITY">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COHER_COMPAR">
+                <genericmetadata:Value>&lt;p&gt;Coherence reflects&amp;nbsp; the degree to which&amp;nbsp; data can be compared over time and domain.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_GEO">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_QUALITY">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_X_DOM">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_INTERNAL">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COST_BURDEN">
+                <genericmetadata:Value>&lt;p&gt;Cost associated with the census data collection and production of a census product and burden on respondents.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="DATA_REV">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REV_POLICY">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REV_PRACTICE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PROCESS">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="SOURCE_TYPE">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST">
+                        <genericmetadata:Value></genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST_PERS">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST_HOUS">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST_FAM">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST_LQ">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_LIST_DW">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS">
+                        <genericmetadata:Value>&lt;p&gt;Classification of the data sources as requested by Reg. 2017/881, Annex point 2.1.&lt;/p&gt;</genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS_PERS">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS_HOUS">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS_FAM">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS_LQ">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_CLASS_DW">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SOURCE_X_TOPICS">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY">
+                        <genericmetadata:Value></genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY_IE">
+                            <genericmetadata:Value>&lt;p&gt;The characteristics of each statistical unit are recorded separately, so that each characteristic can be cross-classified with others.&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY_SIM">
+                            <genericmetadata:Value>&lt;p&gt;All information refers to the same point in time (reference date).&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY_UNI">
+                            <genericmetadata:Value>&lt;p&gt;Data are provided for all statistical units in a defined territory (for persons in particular, data are provided for all usual residents in a defined territory).&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY_SA">
+                            <genericmetadata:Value>&lt;p&gt;Data are available for small geographical areas and for small subgroups of statistical units.&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                        <genericmetadata:ReportedAttribute conceptID="SOURCE_ADEQUACY_DP">
+                            <genericmetadata:Value></genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="FREQ_COLL">
+                    <genericmetadata:Value>&lt;p&gt;Decennial.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COLL_METHOD">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="COLL_METHOD_QUEST">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COLL_METHOD_REG">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COLL_METHOD_SAMPLE">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COLL_METHOD_MULT">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_VALIDATION">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_COMP">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ADJUSTMENT">
+                    <genericmetadata:Value></genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COMMENT_DSET">
+                <genericmetadata:Value></genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+        </genericmetadata:AttributeValueSet>
+        <genericmetadata:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </genericmetadata:Annotations>
+    </genericmetadata:MetadataSet>
+</GenericMetadata>
