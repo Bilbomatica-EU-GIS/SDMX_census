@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata SDMXGenericMetadata.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>CENSUS_INS21ES_A</ID>
+        <Test>false</Test>
+        <Name>CENSUS_INS21ES_A_NL_2021_0000</Name>
+        <Prepared>2022-12-12T14:48:03</Prepared>
+        <Sender id="NL1">
+            <Contact/>
+        </Sender>
+        <DataSetID>CENSUS_INS21ES_A_1671565051023</DataSetID>
+        <DataSetAction></DataSetAction>
+        <Extracted></Extracted>
+        <ReportingBegin>2021-01-01T00:00:00</ReportingBegin>
+        <ReportingEnd>2021-12-31T00:00:00</ReportingEnd>
+        <DataSetAgency>ESTAT</DataSetAgency>
+    </Header>
+    <genericmetadata:MetadataSet>
+        <genericmetadata:MetadataStructureRef>ESMS_INSPIRE_MSD</genericmetadata:MetadataStructureRef>
+        <genericmetadata:MetadataStructureAgencyRef>ESTAT</genericmetadata:MetadataStructureAgencyRef>
+        <genericmetadata:ReportRef>ESMS_REPORT_FULL</genericmetadata:ReportRef>
+        <genericmetadata:AttributeValueSet>
+            <genericmetadata:TargetRef>FULL_ESMS</genericmetadata:TargetRef>
+            <genericmetadata:TargetValues>
+                <genericmetadata:ComponentValue component="TIME_PERIOD" object="TimeDimension">2021-A0</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATA_PROVIDER" object="DataProvider">NL1</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATAFLOW" object="DataFlow">CENSUS_INS21ES_A:1.0</genericmetadata:ComponentValue>
+            </genericmetadata:TargetValues>
+            <genericmetadata:ReportedAttribute conceptID="CONTACT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_ORGANISATION">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Netherlands&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY">
+                        <genericmetadata:Value>&lt;p&gt;&lt;span style="font-family: 'Times New Roman', Arial, sans-serif;"&gt;Statistics Netherlands&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY_ROLE">
+                        <genericmetadata:Value>RESPROV</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ORGANISATION_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;Division of Socio-economic and spatial statistics&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_NAME">
+                    <genericmetadata:Value>&lt;p&gt;Eric Schulte Nordholt&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FUNCT">
+                    <genericmetadata:Value>&lt;p&gt;Project leader of the Census&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_MAIL">
+                    <genericmetadata:Value>&lt;p&gt;P.O. Box 24500&lt;/p&gt;
+&lt;p&gt;2490 HA The Hague&lt;/p&gt;
+&lt;p&gt;The Netherlands&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_EMAIL">
+                    <genericmetadata:Value>&lt;p&gt;Metadata point of contact :&amp;nbsp;e.schultenordholt@cbs.nl&lt;/p&gt;
+&lt;p&gt;Responsible party :&amp;nbsp;e.schultenordholt@cbs.nl&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_PHONE">
+                    <genericmetadata:Value>&lt;p&gt;+31-6-15850083&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FAX">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="META_UPDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="META_CERTIFIED">
+                    <genericmetadata:Value>2022-11-29</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_POSTED">
+                    <genericmetadata:Value>2022-11-29</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_LAST_UPDATE">
+                    <genericmetadata:Value>2022-11-29</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PRES">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="DATA_DESCR">
+                    <genericmetadata:Value>&lt;p&gt;A census is held every ten years in the Netherlands. Nowadays only already existing sources (registers and surveys) are being used. Since 1971 in the Netherlands there are no longer Census questionnaires for the Population and Housing Census.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TITLE">
+                        <genericmetadata:Value>&lt;p&gt;Population register&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_ABSTRACT">
+                        <genericmetadata:Value>&lt;p&gt;The Population register includes many demographic variables and x-y- coordinates.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TYPE">
+                        <genericmetadata:Value>SPATSER</genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="RES_TYPE_SPAT_DATSET">
+                            <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LOCATOR">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_URI">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_COUPLED">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;nld (T)&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="KEYWORD">
+                        <genericmetadata:Value>&lt;p&gt;Population Distribution&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ORIG_CONTR_VOC">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/theme/pd"&gt;https://inspire.ec.europa.eu/theme/pd&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="META_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;SDMX&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CLASS_SYSTEM">
+                    <genericmetadata:Value>&lt;p&gt;ISCO-08, NACE Rev. 2, etc.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_SECTOR">
+                    <genericmetadata:Value>&lt;p&gt;Information is given for two subcategories.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="TOPIC_CATEGORY">
+                        <genericmetadata:Value>SOCIE</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_DS_TYPE">
+                        <genericmetadata:Value>DOWN</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF">
+                    <genericmetadata:Value>&lt;p&gt;Statistical concepts and definitions are given per category.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOTPOP">
+                        <genericmetadata:Value>&lt;p&gt;For census purposes, the total population of the country consists of all the persons falling within the scope of the census in EU on usual residents.&lt;/p&gt;
+&lt;p&gt;Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons usually resident in the place of enumeration but absent, or expected to be absent, at the time of the census for less than one year shall be considered as temporarily absent persons and thus included in the total unsually population. In contrast, persons living or expected to live outside the place of enumeration for one year or more shall not be considered temporarily absent and shall therefore be excluded from the total population. This is regardless of the length of visits that they may pay to their families from time to time.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons who are enumerated but do not meet the criteria for usual residence in the place of enumeration, i.e. do not live or do not expect to live in the place of enumeration for a continuous period of at least 12 months, are considered temporarily present and are therefore not counted in the total usually resident population.Unless otherwise stated in this report.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SEX">
+                        <genericmetadata:Value>&lt;p&gt;Two categories can be distinguishd: males and females.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_AGE">
+                        <genericmetadata:Value>&lt;p&gt;The age reached at the reference date (in completed years).&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_EMPPERS">
+                        <genericmetadata:Value>&lt;p&gt;'Employed' persons comprise all persons aged 15 years or over who during the reference week:&lt;br /&gt;(a) performed at least one hour of work for pay or profit, in cash or in kind, or&lt;br /&gt;(b) were temporarily absent from a job in which they had already worked and to which they maintained a formal attachment, or from a self-employment activity.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POB">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The place of birth for persons born within the country is the civil division in which the person was born; for those born in other countries, it is the country of birth. For persons born in the country (the native-born population), the concept of place of birth usually refers to the geographic unit where the mother of the individual resided at the time of the person’s birth.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_RES1YCENS">
+                        <genericmetadata:Value>&lt;p&gt;The relationship between the current place of usual residence and the place of usual residence one year prior to the census.&lt;/p&gt;
+&lt;p&gt;For all persons that have changed their usual residence more than once within the year prior to the reference date, the previous place of usual residence is the last usual residence from which they moved to their current place of usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;The EU programme for the 2021 population and housing censuses include data on persons, private households, family nuclei, conventional dwellings and living quarters&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_POP">
+                    <genericmetadata:Value>&lt;p&gt;Persons enumerated in the 2021 census are those who were usually resident in the territory of the reporting country at the census reference date. Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REF_AREA">
+                    <genericmetadata:Value>&lt;p&gt;Data are available at different levels of geographical detail: national, NUTS2, NUTS3 and local administrative units (LAU2).&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_BBOX">
+                        <genericmetadata:Value>&lt;p&gt;Coordinates of the bounding box of our INSPIRE publication “Population Distribution” in Latitude and Longitude are:&lt;span style="color: #271d6c;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;from left down X=3.21 (West) Y=50.73 (South) till right up X=7.25 (East) Y=53.58 (North).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_RES">
+                        <genericmetadata:Value>&lt;p&gt;1000&lt;/p&gt;
+&lt;p&gt;Unit:m&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COORD_SYSTEM">
+                        <genericmetadata:Value>&lt;p&gt;EPSG:3035 - ETRS89 / LAEA Europe&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Data refer to the situation in the reporting country at the census reference date.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="BASE_PER">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="UNIT_MEASURE">
+                <genericmetadata:Value>&lt;p&gt;Counts of statistical units.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REF_PERIOD">
+                <genericmetadata:Value>&lt;p&gt;01-01-2021&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REF_DATE">
+                    <genericmetadata:Value>&lt;p&gt;01-01-2021&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="INST_MANDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_LA_OA">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Netherlands is responsible for conducting the Population and Housing Census in the Netherlands.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_SHAR">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Netherlands is responsible for conducting the Population and Housing Census in the Netherlands.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="CONF">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONF_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The Census data that are published are protected according to national law. This implies that no individual sensitive information may be disclosed.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONF_DATA_TR">
+                    <genericmetadata:Value>&lt;p&gt;Some cells had to be declared confidential to prevent disclosing individual sensitive information.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REL_POLICY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;Grid squares are released in December 2022.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_ACCESS">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_POL_US_AC">
+                    <genericmetadata:Value>&lt;p&gt;Access to grid squares data is feasible via Eurostat.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_COND">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_LIM">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="FREQ_DISS">
+                <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCESSIBILITY_CLARITY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="NEWS_REL">
+                    <genericmetadata:Value>&lt;p&gt;After publication a lot of attention can be expected.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUBLICATIONS">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Netherlands is planning to publish articles and possibly also a book on its Census 2021 results and applied methodology.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ONLINE_DB">
+                    <genericmetadata:Value>&lt;p&gt;Access to grid squares data is feasible via Eurostat.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="MICRO_DAT_ACC">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Netherlands is planning to release protected microdata of the 2021 Census in the year 2025.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DISS_OTHER">
+                    <genericmetadata:Value>&lt;p&gt;Other formats of dissemination may be decided upon later.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DOC_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;Documentation on the methodology applied can be found in the books about the 2001 and 2011 Censuses.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_DOC">
+                    <genericmetadata:Value>&lt;p&gt;Information about the quality will be published later.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="QUALITY_MGMNT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSURE">
+                    <genericmetadata:Value>&lt;p&gt;All data are checked for completeness and consistency with statistical concepts and definitions.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="LINEAGE">
+                        <genericmetadata:Value>&lt;p&gt;Here European grids for the Netherlands are used contrary to national grids that are used for national publications.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_SPEC">
+                        <genericmetadata:Value>&lt;p&gt;Here European grids for the Netherlands are used contrary to national grids that are used for national publications.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_DEGREE">
+                        <genericmetadata:Value>&lt;p&gt;Here European grids for the Netherlands are used contrary to national grids that are used for national publications.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSMNT">
+                    <genericmetadata:Value>&lt;p&gt;This consists for the Netherlands only of coverage assessment.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="RELEVANCE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="USER_NEEDS">
+                    <genericmetadata:Value>&lt;p&gt;The census data disseminated by Eurostat are addressed to policy makers, researchers, media and the general public.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="USER_SAT">
+                    <genericmetadata:Value>&lt;p&gt;No user satisfaction surveys are carried out. User inquiries are handled by the Eurostat User Support service.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPLETENESS">
+                    <genericmetadata:Value>&lt;p&gt;Depends on the availability of data transmitted by the National Statistical Institutes.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCURACY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL">
+                    <genericmetadata:Value>&lt;p&gt;There are no particular reasons for data unreliability.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="SAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable for register-based and traditional censuses.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NONSAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable for register-based censuses.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="TIMELINESS_PUNCT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="TIMELINESS">
+                    <genericmetadata:Value>&lt;p&gt;No problems with the timeliness are foreseen.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_PUB">
+                        <genericmetadata:Value>&lt;p&gt;December 2022&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_LAST_REV">
+                        <genericmetadata:Value>2022-12-30</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_CREATION">
+                        <genericmetadata:Value>2022-12-01</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUNCTUALITY">
+                    <genericmetadata:Value>&lt;p&gt;No problems with the punctuality foreseen.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COHER_COMPAR">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_GEO">
+                    <genericmetadata:Value>&lt;p&gt;The Census grids for the Netherlands are comparable with those for other countries.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_QUALITY">
+                        <genericmetadata:Value>&lt;p&gt;No problems with the data quality are foreseen.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_X_DOM">
+                    <genericmetadata:Value>&lt;p&gt;Figures provided by the National Statistical Institutes in the framework of the 2021 Population and Housing Census may differ from those transmitted in other statistical domains due to the cross domain differences in definitions and methodologies used.&lt;/p&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_INTERNAL">
+                    <genericmetadata:Value>&lt;p&gt;Internal coherence is assured by European regulations defining breakdowns and definitions of topics.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COST_BURDEN">
+                <genericmetadata:Value>&lt;p&gt;The register-based Census of 2021 in the Netherlands costs about 2.3 Million Euros. As no census questionnaires are used no burden is put on respondents.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="DATA_REV">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REV_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The policy of Statistics Netherlands is to minimize data revisions.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REV_PRACTICE">
+                    <genericmetadata:Value>&lt;p&gt;No data revisions are foreseen after the deadline of 1 April 2024.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PROCESS">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="SOURCE_TYPE">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Population register&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="FREQ_COLL">
+                    <genericmetadata:Value>&lt;p&gt;Decennial.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COLL_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;All data have been collected before all Census grid squares could be produced.&lt;/p&gt;
+&lt;p&gt;Specific Census data collection is not applicable, since the Census 2021 is&amp;nbsp;register-based. Statistics Netherlands only uses microdata that are already collected and used for other statistics; no new microdata are collected for the Census programme.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_VALIDATION">
+                    <genericmetadata:Value>&lt;p&gt;All data have been validated before they were used in the process of producing Census grids.&lt;/p&gt;
+&lt;p&gt;Specific data validation is not applicable, since the Census 2021 is&amp;nbsp;register-based. Statistics Netherlands only uses microdata that are already validated and used for other statistics; no new microdata are validated for the Census programme.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_COMP">
+                    <genericmetadata:Value>&lt;p&gt;All data were compiled in the statistical process.&lt;/p&gt;
+&lt;p&gt;Specific data compilation is not applicable, since the Census 2021 is&amp;nbsp;register-based. Statistics Netherlands only uses microdata that are already compiled and used for other statistics; no new microdata are compiled for the Census programme.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ADJUSTMENT">
+                    <genericmetadata:Value>&lt;p&gt;No adjustments were necessary.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COMMENT_DSET">
+                <genericmetadata:Value>&lt;p&gt;No further comments&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+        </genericmetadata:AttributeValueSet>
+        <genericmetadata:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </genericmetadata:Annotations>
+    </genericmetadata:MetadataSet>
+</GenericMetadata>

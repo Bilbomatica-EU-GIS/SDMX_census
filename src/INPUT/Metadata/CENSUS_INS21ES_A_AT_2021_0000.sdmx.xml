@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata SDMXGenericMetadata.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>CENSUS_INS21ES_A</ID>
+        <Test>false</Test>
+        <Name>CENSUS_INS21ES_A_AT_2021_0000</Name>
+        <Prepared>2022-12-14T10:04:25</Prepared>
+        <Sender id="AT1">
+            <Contact/>
+        </Sender>
+        <DataSetID>CENSUS_INS21ES_A_1671102826933</DataSetID>
+        <DataSetAction></DataSetAction>
+        <Extracted></Extracted>
+        <ReportingBegin>2021-01-01T00:00:00</ReportingBegin>
+        <ReportingEnd>2021-12-31T00:00:00</ReportingEnd>
+        <DataSetAgency>ESTAT</DataSetAgency>
+    </Header>
+    <genericmetadata:MetadataSet>
+        <genericmetadata:MetadataStructureRef>ESMS_INSPIRE_MSD</genericmetadata:MetadataStructureRef>
+        <genericmetadata:MetadataStructureAgencyRef>ESTAT</genericmetadata:MetadataStructureAgencyRef>
+        <genericmetadata:ReportRef>ESMS_REPORT_FULL</genericmetadata:ReportRef>
+        <genericmetadata:AttributeValueSet>
+            <genericmetadata:TargetRef>FULL_ESMS</genericmetadata:TargetRef>
+            <genericmetadata:TargetValues>
+                <genericmetadata:ComponentValue component="TIME_PERIOD" object="TimeDimension">2021-A0</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATA_PROVIDER" object="DataProvider">AT1</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATAFLOW" object="DataFlow">CENSUS_INS21ES_A:1.0</genericmetadata:ComponentValue>
+            </genericmetadata:TargetValues>
+            <genericmetadata:ReportedAttribute conceptID="CONTACT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_ORGANISATION">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Austria&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY">
+                        <genericmetadata:Value>&lt;p&gt;Statistics Austria&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY_ROLE">
+                        <genericmetadata:Value>POICON</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ORGANISATION_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;Directorate Social Statistics, Demography and Health, Register-based census&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_NAME">
+                    <genericmetadata:Value>&lt;p&gt;Nicole Gumprecht&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FUNCT">
+                    <genericmetadata:Value>&lt;p&gt;Head of register-based census&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_MAIL">
+                    <genericmetadata:Value>&lt;p&gt;Guglgasse 13, 1110 Vienna, Austria&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_EMAIL">
+                    <genericmetadata:Value>&lt;p&gt;Metadata point of contact : registerzaehlung@statistik.gv.at&lt;/p&gt;
+&lt;p&gt;Responsible party : inspire@statistik.gv.at&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_PHONE">
+                    <genericmetadata:Value>&lt;p&gt;+43 1 71128 7352&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FAX">
+                    <genericmetadata:Value>&lt;p&gt;+43 1 71128 7445&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="META_UPDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="META_CERTIFIED">
+                    <genericmetadata:Value>2022-12-14</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_POSTED">
+                    <genericmetadata:Value>2022-12-14</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_LAST_UPDATE">
+                    <genericmetadata:Value>2022-12-14</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PRES">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="DATA_DESCR">
+                    <genericmetadata:Value>&lt;p&gt;The data present the results of the 2021 EU census on population and housing, following Regulation (EC) 763/2008; Regulation (EU) 2017/543; Regulation (EU) 2017/712 and Regulation (EU) 2017/881; Regulation (EU) 2018/1799.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TITLE">
+                        <genericmetadata:Value>&lt;p&gt;1 square km grid data from the Austrian population census 2021&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_ABSTRACT">
+                        <genericmetadata:Value>&lt;p&gt;1 square km grid data from the Austrian population census 2021 - Total population.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TYPE">
+                        <genericmetadata:Value>SPATSER</genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="RES_TYPE_SPAT_DATSET">
+                            <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LOCATOR">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_URI">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.inspire.gv.at"&gt;https://data.inspire.gv.at&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_COUPLED">
+                        <genericmetadata:Value></genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="KEYWORD">
+                        <genericmetadata:Value>&lt;p&gt;Population Distribution&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ORIG_CONTR_VOC">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/theme/pd"&gt;https://inspire.ec.europa.eu/theme/pd&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="META_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CLASS_SYSTEM">
+                    <genericmetadata:Value>&lt;p&gt;EPSG:3035 - Equal Area Grid 'Grid_ETRS89-LAEA1000'&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_SECTOR">
+                    <genericmetadata:Value>&lt;p&gt;All Austrian 1 square km grid cells.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="TOPIC_CATEGORY">
+                        <genericmetadata:Value>SOCIE</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_DS_TYPE">
+                        <genericmetadata:Value>DOWN</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF">
+                    <genericmetadata:Value>&lt;p&gt;The information is given separately for each census topic.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOTPOP">
+                        <genericmetadata:Value>&lt;p&gt;For census purposes, the total population of the country consists of all the persons falling within the scope of the census in EU on usual residents.&lt;/p&gt;
+&lt;p&gt;Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons usually resident in the place of enumeration but absent, or expected to be absent, at the time of the census for less than one year shall be considered as temporarily absent persons and thus included in the total unsually population. In contrast, persons living or expected to live outside the place of enumeration for one year or more shall not be considered temporarily absent and shall therefore be excluded from the total population. This is regardless of the length of visits that they may pay to their families from time to time.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons who are enumerated but do not meet the criteria for usual residence in the place of enumeration, i.e. do not live or do not expect to live in the place of enumeration for a continuous period of at least 12 months, are considered temporarily present and are therefore not counted in the total usually resident population.Unless otherwise stated in this report.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SEX">
+                        <genericmetadata:Value>&lt;p&gt;Sex that is registered in the birth certificate. As a rule, this refers to the biological sex. However, a person can have his/her gender changed in the birth certificate (and thus CPR) under certain circumstances (gender reassignment surgery not necessary, but gender alignment has to have taken place); binary variable: female or male.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_AGE">
+                        <genericmetadata:Value>&lt;p&gt;The age reached at the reference date (in completed years).&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_EMPPERS">
+                        <genericmetadata:Value>&lt;p&gt;'Employed' persons comprise all persons aged 15 years or over who during the reference week: (a) performed at least one hour of work for pay or profit, in cash or in kind, or (b) were temporarily absent from a job in which they had already worked and to which they maintained a formal attachment, or from a self-employment activity. &lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POB">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The place of birth for persons born within the country is the civil division in which the person was born; for those born in other countries, it is the country of birth. For persons born in the country (the native-born population), the concept of place of birth usually refers to the geographic unit where the mother of the individual resided at the time of the person’s birth.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_RES1YCENS">
+                        <genericmetadata:Value>&lt;p&gt;The relationship between the current place of usual residence and the place of usual residence one year prior to the census.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_UNIT">
+                    <genericmetadata:Value>grid cell</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_POP">
+                    <genericmetadata:Value>&lt;p&gt;Persons enumerated in the 2021 census are those who were usually resident in the territory of the reporting country at the census reference date. Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REF_AREA">
+                    <genericmetadata:Value>&lt;p&gt;Austria&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_BBOX">
+                        <genericmetadata:Value>&lt;p&gt;8.34, 17.919, 45.354, 49.214&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_RES">
+                        <genericmetadata:Value>&lt;p&gt;1000&lt;/p&gt;
+&lt;p&gt;Unit:m&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COORD_SYSTEM">
+                        <genericmetadata:Value>&lt;p&gt;EPSG:3035 - ETRS89 / LAEA Europe&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Data refer to the situation in the reporting country at the census reference date.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="BASE_PER">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="UNIT_MEASURE">
+                <genericmetadata:Value>&lt;p&gt;Counts of statistical units.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REF_PERIOD">
+                <genericmetadata:Value>&lt;p&gt;31/10/2021&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REF_DATE">
+                    <genericmetadata:Value>&lt;p&gt;31/10/2021&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="INST_MANDATE">
+                <genericmetadata:Value>&lt;p&gt;Law, set of rules or other formal set of instructions assigning responsibility as well as the authority to an organization for the collection, processing, and dissemination of census statistics.&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_LA_OA">
+                    <genericmetadata:Value>&lt;p&gt;Bundesgesetz über die Durchführung von Volks-, Arbeitsstätten-, Gebäude- und Wohnungszählungen (Registerzählungsgesetz) BGBl. I Nr. 33/2006 idgF&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_SHAR">
+                    <genericmetadata:Value>&lt;p&gt;Bundesgesetz über die Bundesstatistik (Bundesstatistikgesetz 2000) BGBl. I Nr. 163/1999 idgF&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="CONF">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONF_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The data treatment is regulated in the legal basis for the register-based census: BGBl. I Nr. 33/2006.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONF_DATA_TR">
+                    <genericmetadata:Value>&lt;p&gt;The data are compiled from various spending-registers that provide their information. To ensure data privacy protection, all microdata are pseudonymised. A branch-specific personal identification number for official statistics (bPIN OS) is required before delivering the data to Statistics Austria. Each individual has a unique number. The administrative units get an encrypted version of these bPIN-OS which has to be linked to the data that is sent to Statistics Austria. Hence, only Statistics Austria is able to decode the bPIN-OS and to link the individuals. &lt;/p&gt;
+&lt;p&gt;The SDC method chosen for the Austrian census is Record Swapping. Swapping minimises the risk of disclosure, preserves the additivity and consistency of output tables, is easy to implement and to understand, and it is possible to conduct special analyses outside the Census Hub without changing the results.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REL_POLICY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;Data are made available 14 months after the end of the reference period (December 2022)&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_ACCESS">
+                    <genericmetadata:Value>&lt;p&gt;&lt;a href="https://www.statistik.at/en/medien/release-calendar"&gt;https://www.statistik.at/en/medien/release-calendar&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_POL_US_AC">
+                    <genericmetadata:Value>&lt;p&gt;All users were informed at the same time. &lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_COND">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_LIM">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="FREQ_DISS">
+                <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCESSIBILITY_CLARITY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="NEWS_REL">
+                    <genericmetadata:Value>&lt;p&gt;Results from the Austrian census are published in various news releases. For a list of news releases see: &lt;a href="https://www.statistik.at/medien/en/press-releases"&gt;https://www.statistik.at/medien/en/press-releases&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUBLICATIONS">
+                    <genericmetadata:Value>&lt;p&gt;Results from the Austrian census are published in various publications releases. For a list of publications releases see: &lt;a href="https://www.statistik.at/en/services/tools/services/publikationen"&gt;https://www.statistik.at/en/services/tools/services/publikationen&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ONLINE_DB">
+                    <genericmetadata:Value>&lt;p&gt;&lt;a href="https://ec.europa.eu/CensusHub2/"&gt;https://ec.europa.eu/CensusHub2/&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="MICRO_DAT_ACC">
+                    <genericmetadata:Value>Not available.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DISS_OTHER">
+                    <genericmetadata:Value>Not available.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DOC_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;The documentation on methodology will be available as soon as it is finished on &lt;a href="https://www.statistik.at"&gt;https://www.statistik.at&lt;/a&gt;.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_DOC">
+                    <genericmetadata:Value>&lt;p&gt;The national quality report will be available as soon as it is finished on &lt;a href="https://www.statistik.at"&gt;https://www.statistik.at&lt;/a&gt;.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="QUALITY_MGMNT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSURE">
+                    <genericmetadata:Value>&lt;p&gt;In the whole process the guidelines for Statistics Austria according to the Federal Statistics Act and the Register-based Census law were applied. &lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="LINEAGE">
+                        <genericmetadata:Value>&lt;p&gt;Official preliminary dataset, quality is assured.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_SPEC">
+                        <genericmetadata:Value>&lt;p&gt;Regulation (EU) No 2018/1799 of 21 November 2018.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_DEGREE">
+                        <genericmetadata:Value>&lt;p&gt;Conform to Regulation (EU) No 2018/1799.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSMNT">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Austria developed a special quality-framework for the quality assessment of register-based statistics. For the evaluation of the data, four quality-related hyperdimensions are computed. On the register-level a) the quality of the documentation of data b) the usability of the data and c) the validity compared to an external source are assessed by three hyperdimensions. The fourth hyperdimension evaluates the quality of the imputations. A quality-indicator can be derived from these four hyperdimensions. For the combination of the quality-measures and for further details on the comprehensive quality-framework see the documentation on quality assessment.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="RELEVANCE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="USER_NEEDS">
+                    <genericmetadata:Value>&lt;p&gt;Counts of statistical units&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="USER_SAT">
+                    <genericmetadata:Value>&lt;p&gt;No user satisfaction surveys are carried out. &lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPLETENESS">
+                    <genericmetadata:Value>&lt;p&gt;Complete.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCURACY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL">
+                    <genericmetadata:Value>&lt;p&gt;There are no particular reasons for data unreliability for this topic.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="SAMPLING_ERR">
+                    <genericmetadata:Value>Not applicable.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NONSAMPLING_ERR">
+                    <genericmetadata:Value>Not applicable.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="TIMELINESS_PUNCT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="TIMELINESS">
+                    <genericmetadata:Value>&lt;p&gt;According to Article 9 (1) of the Regulation (EU) No 2018/1799, Member States shall provide the Commission (Eurostat) with validated and aggregated data and with metadata on total population by 31 December 2022.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_PUB">
+                        <genericmetadata:Value>&lt;p&gt;31/12/2022&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_LAST_REV">
+                        <genericmetadata:Value>2022-12-21</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_CREATION">
+                        <genericmetadata:Value>2022-12-21</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUNCTUALITY">
+                    <genericmetadata:Value>Not available.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COHER_COMPAR">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_GEO">
+                    <genericmetadata:Value>&lt;p&gt;The definitions and technical specifications of Regulation (EU) 2018/1799 were applied. The comparability of data is assured. &lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_QUALITY">
+                        <genericmetadata:Value>&lt;p&gt;Geographic quality principles, in particular territorial coverage and comparability, positional accuracy, as well as temporal coherence and completeness of the geographic data used for geocoding, as requested by Annex III to Reg. 2018/1799 are fulfilled.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_TIME">
+                    <genericmetadata:Value>Not available.</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_X_DOM">
+                    <genericmetadata:Value>&lt;p&gt;Figures provided by the National Statistical Institutes in the framework of the 2021 Population and Housing Census may differ from those transmitted in other statistical domains due to the cross domain differences in definitions and methodologies used. For additional information please see metadata specific to each domain.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_INTERNAL">
+                    <genericmetadata:Value>&lt;p&gt;Internal coherence is assured by regulations (Regulation (EC) No 763/2008, Regulation (EU) No 2017/543, Regulation (EU) No 1151/2010)&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COST_BURDEN">
+                <genericmetadata:Value>&lt;p&gt;Due to the method of a register-based census there is no burden for the population. The costs are reduced in comparison to a conventional census.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="DATA_REV">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REV_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The publicated preliminary grid data on total population will be revised and replaced by final data in May 2023.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REV_PRACTICE">
+                    <genericmetadata:Value>&lt;p&gt;The publicated preliminary grid data on total population will be revised and replaced by final data in May 2023.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PROCESS">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="SOURCE_TYPE">
+                    <genericmetadata:Value>&lt;p&gt;- Central Population Register&lt;br /&gt;- Central Civil Status Register&lt;br /&gt;- Business Register&lt;br /&gt;- Central Social Security Register&lt;br /&gt;- Tax Register&lt;br /&gt;- Unemployment Register&lt;br /&gt;- Register of Educational Attainment&lt;br /&gt;- Register of Enrolled Pupils and Students&lt;br /&gt;- Buildings and Dwellings Register&lt;br /&gt;- Family allowance register&lt;br /&gt;- Registers of public servants of the federal state and the "Laender" (NUTS2 level)&lt;br /&gt;- Central Foreigner Register&lt;br /&gt;- Register of Social Welfare Recipients&lt;br /&gt;- Register of Alternative Civilian Service&lt;br /&gt;- Conscription Register&lt;br /&gt;- Register of car owners&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="FREQ_COLL">
+                    <genericmetadata:Value>&lt;p&gt;Continuously.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COLL_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;Data are transmitted to Statistics Austria at regular intervals (at least annually).&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_VALIDATION">
+                    <genericmetadata:Value>&lt;p&gt;As data on various topics are provided by several administrative data holders the quality of the attributes enhances due to the principle of redundancy. A special rule set defined by Statistics Austria picks the most appropriate value for the census-micro-database for each individual according to the values in the spending registers. Furthermore plausibility-checks are carried out in the data processing. In the quality assessment a comparison of the spending registers to an external source (micro-census) is carried out and the trustworthiness of the final data is evaluated.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_COMP">
+                    <genericmetadata:Value>&lt;p&gt;Details will be provided in national documentation as soon as it is finished &lt;a href="https://www.statistik.at"&gt;https://www.statistik.at&lt;/a&gt;.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ADJUSTMENT">
+                    <genericmetadata:Value>&lt;p&gt;Details will be provided in national documentation as soon as it is finished &lt;a href="https://www.statistik.at"&gt;https://www.statistik.at&lt;/a&gt;.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COMMENT_DSET">
+                <genericmetadata:Value>Not available.</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+        </genericmetadata:AttributeValueSet>
+        <genericmetadata:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </genericmetadata:Annotations>
+    </genericmetadata:MetadataSet>
+</GenericMetadata>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata SDMXGenericMetadata.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>CENSUS_INS21ES_A</ID>
+        <Test>false</Test>
+        <Name>CENSUS_INS21ES_A_DK_2021_0000</Name>
+        <Prepared>2022-12-12T14:47:15</Prepared>
+        <Sender id="DK1">
+            <Contact/>
+        </Sender>
+        <DataSetID>CENSUS_INS21ES_A_1671102780996</DataSetID>
+        <DataSetAction></DataSetAction>
+        <Extracted></Extracted>
+        <ReportingBegin>2021-01-01T00:00:00</ReportingBegin>
+        <ReportingEnd>2021-12-31T00:00:00</ReportingEnd>
+        <DataSetAgency>ESTAT</DataSetAgency>
+    </Header>
+    <genericmetadata:MetadataSet>
+        <genericmetadata:MetadataStructureRef>ESMS_INSPIRE_MSD</genericmetadata:MetadataStructureRef>
+        <genericmetadata:MetadataStructureAgencyRef>ESTAT</genericmetadata:MetadataStructureAgencyRef>
+        <genericmetadata:ReportRef>ESMS_REPORT_FULL</genericmetadata:ReportRef>
+        <genericmetadata:AttributeValueSet>
+            <genericmetadata:TargetRef>FULL_ESMS</genericmetadata:TargetRef>
+            <genericmetadata:TargetValues>
+                <genericmetadata:ComponentValue component="TIME_PERIOD" object="TimeDimension">2021-A0</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATA_PROVIDER" object="DataProvider">DK1</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATAFLOW" object="DataFlow">CENSUS_INS21ES_A:1.0</genericmetadata:ComponentValue>
+            </genericmetadata:TargetValues>
+            <genericmetadata:ReportedAttribute conceptID="CONTACT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_ORGANISATION">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Denmark&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY">
+                        <genericmetadata:Value>&lt;p&gt;Statistics Denmark&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY_ROLE">
+                        <genericmetadata:Value>OWN</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ORGANISATION_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;Unit Population and Education&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_NAME">
+                    <genericmetadata:Value>&lt;p&gt;Annika Klintefelt&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FUNCT">
+                    <genericmetadata:Value>&lt;p&gt;Senior Adviser&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_MAIL">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Statistics Denmark&lt;/span&gt;&lt;br /&gt;&lt;span&gt;Sejrøgade 11&lt;/span&gt;&lt;br /&gt;&lt;span&gt;DK-2100 Copenhagen&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_EMAIL">
+                    <genericmetadata:Value>&lt;p&gt;Metadata point of contact : akf@dst.dk&lt;/p&gt;
+&lt;p&gt;Responsible party : akf@dst.dk&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_PHONE">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;+45 39 17 39 17&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FAX">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="META_UPDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="META_CERTIFIED">
+                    <genericmetadata:Value>2022-11-22</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_POSTED">
+                    <genericmetadata:Value>2022-11-22</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_LAST_UPDATE">
+                    <genericmetadata:Value>2022-11-22</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PRES">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="DATA_DESCR">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Population census provides a large range of demographic data on size and structure of the permanently resident population of Denmark at national and regional level. Data are also provided on population and its employment, families and housing.&amp;nbsp;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TITLE">
+                        <genericmetadata:Value>&lt;p&gt;Census 2021&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_ABSTRACT">
+                        <genericmetadata:Value>&lt;p&gt;Population and housing statistics&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TYPE">
+                        <genericmetadata:Value>SPATSET</genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="RES_TYPE_SPAT_DATSET">
+                            <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LOCATOR">
+                        <genericmetadata:Value>&lt;p&gt;data.europa.eu/&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_URI">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_COUPLED">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="KEYWORD">
+                        <genericmetadata:Value>&lt;p&gt;Population Distribution&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ORIG_CONTR_VOC">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/theme/pd"&gt;https://inspire.ec.europa.eu/theme/pd&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="META_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CLASS_SYSTEM">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Population census results are produced in accordance with relevant national and international classifications and cover the total population.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_SECTOR">
+                    <genericmetadata:Value>&lt;p&gt;society&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="TOPIC_CATEGORY">
+                        <genericmetadata:Value>SOCIE</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_DS_TYPE">
+                        <genericmetadata:Value>DOWN</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF">
+                    <genericmetadata:Value>&lt;p&gt;According to EU regulations&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOTPOP">
+                        <genericmetadata:Value>&lt;p&gt;For census purposes, the total population of the country consists of all the persons falling within the scope of the census in EU on usual residents.&lt;/p&gt;
+&lt;p&gt;Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons usually resident in the place of enumeration but absent, or expected to be absent, at the time of the census for less than one year shall be considered as temporarily absent persons and thus included in the total unsually population. In contrast, persons living or expected to live outside the place of enumeration for one year or more shall not be considered temporarily absent and shall therefore be excluded from the total population. This is regardless of the length of visits that they may pay to their families from time to time.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons who are enumerated but do not meet the criteria for usual residence in the place of enumeration, i.e. do not live or do not expect to live in the place of enumeration for a continuous period of at least 12 months, are considered temporarily present and are therefore not counted in the total usually resident population.Unless otherwise stated in this report.&lt;/p&gt;
+&lt;div&gt;A Nordic citizen will be registered in the Civil Registration System (and thus a part of the population) if his intention is to stay in the country for six months. No permission to stay in the country is needed. EU/EEA citizens and Swiss citizens can reside in&amp;nbsp; Denmark under the EU regulation on free movement. They are obliged to register in the Civil Registration System if the intention is to stay for at least 6 months. For all other citizenship, 3 months intention is the limit for registration.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;A move away from Denmark should be of at least 6 months intention in order to be registered in the Civil Registration System as an emigration. There is however an exception, if moving to Sweden or Finland 12 months is the time limit (around 4,000 persons moves yearly to the above mentioned Nordic countries). This exception is due to the inter-Nordic agreement on population registration from 1969 followed by the new agreement on National Registration of Stockholm of 1 November 2004.&lt;/div&gt;
+&lt;/div&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SEX">
+                        <genericmetadata:Value>&lt;p&gt;Registered sex at the reference date - Male and female&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_AGE">
+                        <genericmetadata:Value>&lt;p&gt;The age reached at the reference date (in completed years).&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_EMPPERS">
+                        <genericmetadata:Value>&lt;p&gt;‘Employed’ persons comprise all persons aged 15 years or over who during the reference week:&lt;br /&gt;(a) performed at least one hour of work for pay or profit, in cash or in kind, or&lt;br /&gt;(b) were temporarily absent from a job in which they had already worked and to which they maintained a formal&lt;br /&gt;attachment, or from a self-employment activity.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POB">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The place of birth for persons born within the country is the civil division in which the person was born; for those born in other countries, it is the country of birth. For persons born in the country (the native-born population), the concept of place of birth usually refers to the geographic unit where the mother of the individual resided at the time of the person’s birth.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_RES1YCENS">
+                        <genericmetadata:Value>&lt;p&gt;The relationship between the current place of usual residence and the place of usual residence one year prior to the census.&lt;/p&gt;
+&lt;p&gt;For all persons that have changed their usual residence more than once within the year prior to the reference date, the previous place of usual residence is the last usual residence from which they moved to their current place of usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;Total Population in 1 kilometer grids.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_POP">
+                    <genericmetadata:Value>&lt;p&gt;Usual residence population&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REF_AREA">
+                    <genericmetadata:Value>&lt;p&gt;Denmark&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_BBOX">
+                        <genericmetadata:Value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;X_left: 8,016957&lt;/p&gt;
+&lt;p&gt;X_right: 15,580533&lt;/p&gt;
+&lt;p&gt;Y_bottom: 54,443223&lt;/p&gt;
+&lt;p&gt;Y_top: 57,759034&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_RES">
+                        <genericmetadata:Value>&lt;p&gt;1000&lt;/p&gt;
+&lt;p&gt;Unit:m&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COORD_SYSTEM">
+                        <genericmetadata:Value>&lt;p&gt;EPSG:3035 - ETRS89 / LAEA Europe&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Data refer to the situation in the reporting country at the census reference date.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="BASE_PER">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="UNIT_MEASURE">
+                <genericmetadata:Value>&lt;p&gt;Count of statistical units&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REF_PERIOD">
+                <genericmetadata:Value>&lt;p&gt;1. January 2021&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REF_DATE">
+                    <genericmetadata:Value>&lt;p&gt;1. January 2021&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="INST_MANDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_LA_OA">
+                    <genericmetadata:Value>&lt;p&gt;Act on Statistics Denmark, cf. consolidating act no. 599 of 22 June 2000.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_SHAR">
+                    <genericmetadata:Value>&lt;p&gt;Act on Statistics Denmark, cf. consolidating act no. 599 of 22 June 2000.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="CONF">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONF_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;The statistics comply with the &lt;a href="https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=formid&amp;amp;fo=dataconfidentiality--pdf&amp;amp;ext=%7b2%7d"&gt;Data Confidentiality Policy at Statistics Denmark&lt;/a&gt;.&amp;nbsp;https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=formid&amp;amp;fo=dataconfidentiality--pdf&amp;amp;ext=%7b2%7d&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONF_DATA_TR">
+                    <genericmetadata:Value>&lt;p&gt;The table on population size by grid&amp;nbsp;has been assessed as not posing any privacy problems, which is why the table has not undergone any data treatment.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REL_POLICY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;No release of grids-tables at Statistics Denmark&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_ACCESS">
+                    <genericmetadata:Value>&lt;p&gt;No release calender for&amp;nbsp;grids-tables&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_POL_US_AC">
+                    <genericmetadata:Value>&lt;p&gt;No release policy for grid tables&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_COND">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_LIM">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="FREQ_DISS">
+                <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCESSIBILITY_CLARITY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="NEWS_REL">
+                    <genericmetadata:Value>&lt;p&gt;No national dissemination&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUBLICATIONS">
+                    <genericmetadata:Value>&lt;p&gt;No national dissemination&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ONLINE_DB">
+                    <genericmetadata:Value>&lt;p&gt;No national dissemination&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="MICRO_DAT_ACC">
+                    <genericmetadata:Value>&lt;p&gt;Researchers and other analysts from authorized research institutions, can be granted access to the underlying micro-data by contacting the Research Services at Statistics Denmark.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DISS_OTHER">
+                    <genericmetadata:Value>&lt;p&gt;No national dissemination&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DOC_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;The methodology has been developed in accordance with relevant international documents on the list, namely Recommendations from EUROSTAT and Regulatory EC.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_DOC">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;To ensure international comparability of Population Census 2021 data Statistics Denmark follows methodology and recommendations issued by the EU regarding e.g. contents and data definitions as well as classifications to be used in the data collection.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="QUALITY_MGMNT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSURE">
+                    <genericmetadata:Value>&lt;p&gt;The current updating of the Civil Registration System takes place in the municipalities. The civil registration number and the updating of residence information and marital status information etc. is required for a vast number of public services, which serves as continuous validation of the content of the register. This also lies at the root of Statistics Denmark’s decision to use the civil registration data for production of the current statistics. Statistics Denmark is in dialogue with relevant authorities to ensure that the updating is correct at the municipal level e.g. regarding the registration of migrations.&lt;/p&gt;
+&lt;p&gt;The municipalities are responsible for registering residential addresses in the Civil Registration System. If a municipality suspect that a registered residence in the Civil Registration System (CPR) is incorrect, the municipality must look into the matter to ensure correct registration in CPR, cf. section 10(1) of the Executive Order on the Civil Registration System Act.&lt;/p&gt;
+&lt;p&gt;CPR has a number of incorporated consistency checks to ensure against registration of invalid values. Cancellations/corrections in CPR, which are registered by the municipalities, are updated in Statistics Denmark’s database as they arrive. The published population figures therefore show the population with as current and correct data as possible at the time of publication.&lt;/p&gt;
+&lt;p&gt;Statistics Denmark also performs a number of automatic checks to ensure the quality of the register and further checks in connection with the publication of the statistics. If relevant, inquiries from users may also give rise to checks.&lt;/p&gt;
+&lt;p&gt;The general quality and reliability of the Civil Registration System (CPR) is regarded as very high, since correct registrations in CPR is required to be able to lead a normal life in Denmark with access to a general practitioner, a NemKonto bank account, employment in a business, starting your own business, participating in elections etc. Moreover, the municipalities are required by the Civil Registration System Act to ensure correct registration in the system of all citizens in the municipality.&lt;/p&gt;
+&lt;p&gt;A few issues remain, however: These are especially associated with the registration of emigration from Denmark. In this connection, foreign students in particular pose a challenge, as they do not always remember to de-register from CPR when they leave Denmark. Delays in the registration of immigrations and emigrations also affect the assessment of the population. It is estimated that the population figure at the end of the year is overestimated by 11,500 emigrants who have failed to report their emigration and underestimated by 1,500 immigrants who have failed to report their immigration. Overall, this means that the population figure is overestimated by 10,000 or 0.14 per cent.&lt;/p&gt;
+&lt;p&gt;In the assessment of the number of cohabiting couples, it is assumed that two people are a couple if they are of opposite sex, live together and their age difference is less than 15 years. It has not been examined how many of these cohabiting couples are in fact couples, but it is likely that some of them will simply be e.g. two students of opposite sex who share a flat. Accordingly, the number of cohabiting couples of opposite sex may be overestimated, although there may also be couples who are not included due to an age difference of more than 15 years.&lt;/p&gt;
+&lt;p&gt;It is not possible to include two people of the same sex as a cohabiting couple (due to the definition). This means that the number of same-sex couples is underestimated.&lt;/p&gt;
+&lt;p&gt;The number of same-sex marriages/divorces may be underestimated, while the number of opposite-sex marriages/divorces may be overestimated. This applies only for marriages and divorces where one of the parties has not resided in Denmark.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="LINEAGE">
+                        <genericmetadata:Value>&lt;p&gt;The data has been quality assured. The data has been valued to have a very good quality.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_SPEC">
+                        <genericmetadata:Value>&lt;p&gt;COMMISSION IMPLEMENTING REGULATION (EU) 2018/1799 of 21 November 2018 on the establishment of a temporary direct statistical action for the dissemination of selected topics of the 2021 population and housing census geocoded to a 1 km2 grid&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_DEGREE">
+                        <genericmetadata:Value>&lt;p&gt;conform&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSMNT">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;To ensure international comparability of Population Census 2021 data Statistics Denmark follows methodology and recommendations issued by the EU regarding e.g. contents and data definitions as well as classifications to be used in the data collection. 13,783 persons have not been allocated to a grid but are reported to a virtual grid.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="RELEVANCE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="USER_NEEDS">
+                    <genericmetadata:Value>&lt;p&gt;The census data dissseminated by Eurostat are addressed to policy makers, researchers, media and the general public.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="USER_SAT">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span style="color: #000000;"&gt;No user satisfaction surveys are carried out by Statistics Denmark regarding the Census tables. User inquiries are handled by Eurostat User Support.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPLETENESS">
+                    <genericmetadata:Value>&lt;p&gt;Depends on the availiability of data transmitted by the National Statistical Institues.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCURACY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL">
+                    <genericmetadata:Value>&lt;p&gt;The statistics are based on the population registered in the Civil Registration System (CPR). Since correct registration in CPR is a condition for being able to lead a normal life in Denmark, the general quality and reliability of the register is regarded as very high.&lt;/p&gt;
+&lt;p&gt;Failure to report immigrations and emigrations means that the published population is considered to be overestimated by 10,000 people or 0.14 per cent.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="SAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NONSAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;Corrections and cancellations of registrations in CPR are made on an ongoing basis. The vast majority of corrections and cancellations are made immediately after an error is observed in CPR, and thus do not pose a problem for the statistics.&lt;/p&gt;
+&lt;p&gt;Incorrect addresses, which affect the assessment of families and households in particular, involve certain challenges. People without a permanent residence are a source of uncertainty. They are registered under special municipal addresses of a fictitious nature and are managed by the local civil registers. These addresses are reserved for people who cannot be registered at a residence for some reason. E.g. homeless persons, sailors, posted diplomats and certain other posted persons. Read more about the quality of the municipalities’ address registration in &lt;a href="https://www.vive.dk/da/udgivelser/undersoegelse-af-kvaliteten-af-kommunernes-arbejde-med-bopaelsregistrering-i-cpr-15524/"&gt;a survey by VIVE&lt;/a&gt; (in Danish) https://www.vive.dk/da/udgivelser/undersoegelse-af-kvaliteten-af-kommunernes-arbejde-med-bopaelsregistrering-i-cpr-15524/ .&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="TIMELINESS_PUNCT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="TIMELINESS">
+                    <genericmetadata:Value>&lt;p&gt;The census-tabel regarding grid is sendt to Eurostat before the deadline of 31. December 2022.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_PUB">
+                        <genericmetadata:Value>&lt;p&gt;The data is not published nationally.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_LAST_REV">
+                        <genericmetadata:Value>2022-12-09</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_CREATION">
+                        <genericmetadata:Value>2022-12-09</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUNCTUALITY">
+                    <genericmetadata:Value>&lt;p&gt;The census-tabel regarding grid is sendt to Eurostat before the deadline of 31. December 2022.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COHER_COMPAR">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_GEO">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Geographic comparability is possible with all countries that have implemented and organized the census following international recommendations regarding the timing of the census and the rules and definitions used in the census.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Geographic comparability is possible within Denmark.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_QUALITY">
+                        <genericmetadata:Value>&lt;p&gt;Geographic comparability is possible with all countries that have implemented and organized the census following international recommendations regarding the timing of the census and the rules and definitions used in the census.&lt;/p&gt;
+&lt;p&gt;The data is fully comparable within Denmark. The data have a very high quality.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_TIME">
+                    <genericmetadata:Value>&lt;p&gt;The census is not fully comparable over time.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_X_DOM">
+                    <genericmetadata:Value>&lt;p&gt;The census-population is comparable cross domain.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_INTERNAL">
+                    <genericmetadata:Value>&lt;p&gt;The census table is fully coherent internally.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COST_BURDEN">
+                <genericmetadata:Value>&lt;p&gt;The statistics are based on administrative registers. This means that there is no direct reporting task involved in the compilation of these statistics.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="DATA_REV">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REV_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Denmark performs revisions of published figures in compliance with the &lt;a href="https://www.dst.dk/en/OmDS/strategi-og-kvalitet/kvalitet-for-statistikproduktion/revisions-og-fejlpolitik"&gt;Revision and error policy for Statistics Denmark&lt;/a&gt;. The common procedures and principles in the revision policy are supplemented with a specific revision practice.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REV_PRACTICE">
+                    <genericmetadata:Value>&lt;p&gt;Statistics Denmark performs revisions of published figures in compliance with the &lt;a href="https://www.dst.dk/en/OmDS/strategi-og-kvalitet/kvalitet-for-statistikproduktion/revisions-og-fejlpolitik"&gt;Revision and error policy for Statistics Denmark&lt;/a&gt;. The common procedures and principles in the revision policy are supplemented with a specific revision practice.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PROCESS">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="SOURCE_TYPE">
+                    <genericmetadata:Value>&lt;p&gt;Data for the statistics is collected on a daily basis from the Civil Registration System (CPR)&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="FREQ_COLL">
+                    <genericmetadata:Value>&lt;p&gt;Data for the statistics is collected on a daily basis from the Civil Registration System (CPR)&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COLL_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;Administrative data with system-to-system solution.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_VALIDATION">
+                    <genericmetadata:Value>&lt;p&gt;The current updating of the Civil Registration System takes place in the municipalities. The civil registration number and the updating of residence information and marital status information etc. is required for a vast number of public services, which serves as continuous validation of the content of the register. This also lies at the root of Statistics Denmark’s decision to use the civil registration data for production of the current statistics. Statistics Denmark is in dialogue with relevant authorities to ensure that the updating is correct at the municipal level e.g. regarding the registration of migrations.&lt;/p&gt;
+&lt;p&gt;The municipalities are responsible for registering residential addresses in the Civil Registration System. If a municipality suspect that a registered residence in the Civil Registration System (CPR) is incorrect, the municipality must look into the matter to ensure correct registration in CPR, cf. section 10(1) of the Executive Order on the Civil Registration System Act.&lt;/p&gt;
+&lt;p&gt;CPR has a number of incorporated consistency checks to ensure against registration of invalid values. Cancellations/corrections in CPR, which are registered by the municipalities, are updated in Statistics Denmark’s database as they arrive. The published population figures therefore show the population with as current and correct data as possible at the time of publication.&lt;/p&gt;
+&lt;p&gt;Statistics Denmark also performs a number of automatic checks to ensure the quality of the register and further checks in connection with the publication of the statistics. If relevant, inquiries from users may also give rise to checks.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_COMP">
+                    <genericmetadata:Value>&lt;p&gt;The daily data deliveries from CPR contain the births, deaths, changes of address, migrations etc. reported the previous day to the registration offices (CPR) of the municipalities. For each person in CPR for whom an event is updated, Statistics Denmark receives the relevant information and then updates Statistics Denmark’s population database, which holds the previous information on residence, marital status, family, name, citizenship, national church membership status etc.&lt;/p&gt;
+&lt;p&gt;A population statistical recording is created at the end of the quarter by extraction and delimitation of the population based on these basic tables.&lt;/p&gt;
+&lt;p&gt;Based on the information about address in CPR, data is compiled on households, which consist of the person or persons living at the same address. The household can consist of one or several families.&lt;/p&gt;
+&lt;p&gt;A family is one or more people living at the same address and having mutual relations. The relation may be e.g. marriage or registered partnership and parents/children, all of which appear as relations in the Civil Registration System. To be able to assess other couple families (cohabitation), it is assumed that two adults living together with a joint child are a couple, and they are called a &lt;em&gt;Couple living in consensual union.&lt;/em&gt; If a couple has lived with a joint child on 1 January 1990 or on 1 January of a subsequent year, this is also defined as a couple living in consensual union.&lt;/p&gt;
+&lt;p&gt;Two adults who live together, but do &lt;em&gt;not&lt;/em&gt; have joint children, are also assumed to be a couple if their age difference is less than 15 years, they are of opposite sex, and family references in CPR do not indicate that they are related to each other, and there are no other adults on the address. Persons down to 16 years can be cohabiting. The adults may have separate children.&lt;/p&gt;
+&lt;p&gt;In addition to the adult(s), both couple families and singles may include one or several children living at home.&lt;/p&gt;
+&lt;p&gt;The number of changes of residence in Denmark within municipalities, between municipalities and between regions is assessed based on changes of address.&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ADJUSTMENT">
+                    <genericmetadata:Value>&lt;p&gt;No corrections of data are made in addition to those already described under data validation and data processing.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COMMENT_DSET">
+                <genericmetadata:Value>&lt;p&gt;.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+        </genericmetadata:AttributeValueSet>
+        <genericmetadata:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </genericmetadata:Annotations>
+    </genericmetadata:MetadataSet>
+</GenericMetadata>

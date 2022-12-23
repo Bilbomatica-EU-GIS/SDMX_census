@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata SDMXGenericMetadata.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>CENSUS_INS21ES_A</ID>
+        <Test>false</Test>
+        <Name>CENSUS_INS21ES_A_BE_2021_0000</Name>
+        <Prepared>2022-12-14T17:49:17</Prepared>
+        <Sender id="BE1">
+            <Contact/>
+        </Sender>
+        <DataSetID>CENSUS_INS21ES_A_1671102844914</DataSetID>
+        <DataSetAction></DataSetAction>
+        <Extracted></Extracted>
+        <ReportingBegin>2021-01-01T00:00:00</ReportingBegin>
+        <ReportingEnd>2021-12-31T00:00:00</ReportingEnd>
+        <DataSetAgency>ESTAT</DataSetAgency>
+    </Header>
+    <genericmetadata:MetadataSet>
+        <genericmetadata:MetadataStructureRef>ESMS_INSPIRE_MSD</genericmetadata:MetadataStructureRef>
+        <genericmetadata:MetadataStructureAgencyRef>ESTAT</genericmetadata:MetadataStructureAgencyRef>
+        <genericmetadata:ReportRef>ESMS_REPORT_FULL</genericmetadata:ReportRef>
+        <genericmetadata:AttributeValueSet>
+            <genericmetadata:TargetRef>FULL_ESMS</genericmetadata:TargetRef>
+            <genericmetadata:TargetValues>
+                <genericmetadata:ComponentValue component="TIME_PERIOD" object="TimeDimension">2021-A0</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATA_PROVIDER" object="DataProvider">BE1</genericmetadata:ComponentValue>
+                <genericmetadata:ComponentValue component="DATAFLOW" object="DataFlow">CENSUS_INS21ES_A:1.0</genericmetadata:ComponentValue>
+            </genericmetadata:TargetValues>
+            <genericmetadata:ReportedAttribute conceptID="CONTACT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_ORGANISATION">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Statbel (Directorate-general Statistics – Statistics Belgium)&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY">
+                        <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Statbel (Directorate-general Statistics – Statistics Belgium)&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RESP_PARTY_ROLE">
+                        <genericmetadata:Value>POICON</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ORGANISATION_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Databases Citizens&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_NAME">
+                    <genericmetadata:Value>&lt;p&gt;Pieter Dewitte&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FUNCT">
+                    <genericmetadata:Value>&lt;p&gt;Statistician - census manager&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_MAIL">
+                    <genericmetadata:Value>&lt;p&gt;Boulevard du Roi Albert II, 16 - 1000 Brussels&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_EMAIL">
+                    <genericmetadata:Value>&lt;p&gt;Metadata point of contact : pieter.dewitte@economie.fgov.be&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_PHONE">
+                    <genericmetadata:Value>&lt;p&gt;003222776722&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONTACT_FAX">
+                    <genericmetadata:Value></genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                            <common:AnnotationText>YES</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="META_UPDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="META_CERTIFIED">
+                    <genericmetadata:Value>2022-12-23</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_POSTED">
+                    <genericmetadata:Value>2022-12-23</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="META_LAST_UPDATE">
+                    <genericmetadata:Value>2022-12-23</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PRES">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="DATA_DESCR">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TITLE">
+                        <genericmetadata:Value>&lt;p&gt;Population distribution on 1 km² grid cell.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_ABSTRACT">
+                        <genericmetadata:Value>&lt;p&gt;Usual resident population by sex, broad age classes and usual residence expressed in km² grid cells.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_TYPE">
+                        <genericmetadata:Value>SPATSET</genericmetadata:Value>
+                        <genericmetadata:ReportedAttribute conceptID="RES_TYPE_SPAT_DATSET">
+                            <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                        </genericmetadata:ReportedAttribute>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LOCATOR">
+                        <genericmetadata:Value>&lt;p&gt;https://www.geo.be/catalog/details/ea430cb8-2805-4c67-8392-9e2a47c1ef55?l=en&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_URI">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_COUPLED">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://data.europa.eu/en"&gt;https://data.europa.eu/en&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="RES_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="KEYWORD">
+                        <genericmetadata:Value>&lt;p&gt;Population Distribution&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ORIG_CONTR_VOC">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/theme/pd"&gt;https://inspire.ec.europa.eu/theme/pd&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="META_LANGUAGE">
+                        <genericmetadata:Value>&lt;p&gt;English&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CLASS_SYSTEM">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;The cell code of the 1 km INSPIRE Statistical Units Grid for pan-European usage (ETRS89 Lambert Azimuthal Equal-Area (ETRS89-LAEA) coordinate reference system)&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_SECTOR">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="TOPIC_CATEGORY">
+                        <genericmetadata:Value>SOCIE</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_DS_TYPE">
+                        <genericmetadata:Value>DOWN</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_TOTPOP">
+                        <genericmetadata:Value>&lt;p&gt;For census purposes, the total population of the country consists of all the persons falling within the scope of the census in EU on usual residents.&lt;/p&gt;
+&lt;p&gt;Usual residence means the place where a person normally spends the daily period of rest, regardless of temporary absences for purposes of recreation, holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons usually resident in the place of enumeration but absent, or expected to be absent, at the time of the census for less than one year shall be considered as temporarily absent persons and thus included in the total unsually population. In contrast, persons living or expected to live outside the place of enumeration for one year or more shall not be considered temporarily absent and shall therefore be excluded from the total population. This is regardless of the length of visits that they may pay to their families from time to time.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Persons who are enumerated but do not meet the criteria for usual residence in the place of enumeration, i.e. do not live or do not expect to live in the place of enumeration for a continuous period of at least 12 months, are considered temporarily present and are therefore not counted in the total usually resident population.Unless otherwise stated in this report.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_SEX">
+                        <genericmetadata:Value>&lt;p&gt;‘Sex’ refers to the biological and physiological characteristics that define men and women.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_AGE">
+                        <genericmetadata:Value>&lt;p&gt;The age reached at the reference date (in completed years).&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_EMPPERS">
+                        <genericmetadata:Value>&lt;p&gt;Will be available later in 2023.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_POB">
+                        <genericmetadata:Value>&lt;p style="text-align: justify;"&gt;The place of birth for persons born within the country is the civil division in which the person was born; for those born in other countries, it is the country of birth. For persons born in the country (the native-born population), the concept of place of birth usually refers to the geographic unit where the mother of the individual resided at the time of the person’s birth.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="STAT_CONC_DEF_RES1YCENS">
+                        <genericmetadata:Value>&lt;p&gt;The relationship between the current place of usual residence and the place of usual residence one year prior to the census.&lt;/p&gt;
+&lt;p&gt;For all persons that have changed their usual residence more than once within the year prior to the reference date, the previous place of usual residence is the last usual residence from which they moved to their current place of usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_UNIT">
+                    <genericmetadata:Value>&lt;p&gt;grid cell&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="STAT_POP">
+                    <genericmetadata:Value>&lt;p&gt;Usual resident population on 1st January 2021.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REF_AREA">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_BBOX">
+                        <genericmetadata:Value>&lt;p&gt;In WGS84:&lt;/p&gt;
+&lt;p&gt;West 2.55°&lt;/p&gt;
+&lt;p&gt;South 49.5°&lt;/p&gt;
+&lt;p&gt;East 6.41°&lt;/p&gt;
+&lt;p&gt;North 51.51°&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="SPATIAL_RES">
+                        <genericmetadata:Value>&lt;p&gt;1000&lt;/p&gt;
+&lt;p&gt;Unit:m&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="COORD_SYSTEM">
+                        <genericmetadata:Value>&lt;p&gt;EPSG:3035 - ETRS89 / LAEA Europe&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COVERAGE_TIME">
+                    <genericmetadata:Value>&lt;p&gt;Data refer to the situation in the reporting country at the census reference date.&lt;/p&gt;
+&lt;p&gt;1st January 2021&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="BASE_PER">
+                    <genericmetadata:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="UNIT_MEASURE">
+                <genericmetadata:Value>&lt;p&gt;Counts of statistical units.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REF_PERIOD">
+                <genericmetadata:Value>&lt;p&gt;See subcategorie&lt;/p&gt;</genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REF_DATE">
+                    <genericmetadata:Value>&lt;p&gt;1 January 2021&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="INST_MANDATE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_LA_OA">
+                    <genericmetadata:Value>&lt;p&gt;The census in Belgium is regulated at the European level.&lt;/p&gt;
+&lt;p&gt;Regulation (EC) 763/2008; Regulation (EU) 2017/543; Regulation (EU) 2017/712 and Regulation (EU) 2017/881.&lt;/p&gt;
+&lt;p&gt;There isn't a specific law at national level for the 2021 census. Of course the Belgian statistical law of 4 July 1962 applies here.&lt;/p&gt;
+&lt;p&gt;Law of 4 July 1962 on official statistics (ammended by the Act of 1 August 1985 on tax and other measures, the Act of 21 December 1994 on social and other provisions, the Law of 2 January 2001 on social provisions, Budget and miscellaneous and by the program law of 22 December 2008).&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="INST_MAN_SHAR">
+                    <genericmetadata:Value>&lt;p&gt;not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="CONF">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="CONF_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Confidentiality - Regulation (EU) 2017/712 Art 4 and 5&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="CONF_DATA_TR">
+                    <genericmetadata:Value>&lt;p&gt;There was some research in order to decide which SDC-method to use.&lt;/p&gt;
+&lt;p&gt;First the microdata were aggregated without SDC. These results were checked for sensitive information. The first conclusion was that for the hypercubes as well for the GRID-data, there are not a lot of sensible frequency counts. So, a very light SDC-method should suffice.&lt;/p&gt;
+&lt;p&gt;Different SDC-methods were considered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cell key method was never considered as a serious candidate because of the lack of additivity.&amp;nbsp;Our dissemination team found it too difficult to explain to the general public that additivity is not preserved.&lt;/li&gt;
+&lt;li&gt;We performed record swapping in 2011, but due to some&amp;nbsp;inconsistency&amp;nbsp;problems in 2011 for the household data, there was very little support to use this method again. There was also a lot of criticism from census users regarding the record swapping method.&lt;/li&gt;
+&lt;li&gt;Also, cell suppression was considered as a bad choice due to reasons Eurostat mentioned in several meetings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Statbel came up with a new method we could call "geographical perturbation".&amp;nbsp; This method only works for a very light SDC approach when only a very small percentage of the frequency counts is considered as confidentially problematic. This method is now applied for the grid data. Briefly explained, this method works as follows:&lt;/p&gt;
+&lt;p&gt;It is a pretabulated method, which means some of the modifications is done in the microdata before aggregation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Based on some&amp;nbsp;&lt;span data-mce-mark="1"&gt;confidentiality&lt;/span&gt;&amp;nbsp;rules, we determine which grid cells have to be protected. These cells are determined on the basis of the aggregated data before a SDC method is applied.&lt;/li&gt;
+&lt;li&gt;Then we add some perturbations to the microdata. Households in a grid cell to protect are virtually moved to a point with different geographical coordinates. This is a point in another grid cell that should not be protected. This point is always located in the same municipality (same LAU2). We try to choose to the greatest extent possible a point in the same neighbourhood. In Belgium we have some statistical geographical areas that are very detailed. We call them the statistical sectors and these are more detailed than the LAU2 level. Statistical sectors can be considered as the neighbourhoods and are very important for our national dissemination. We choose, if possible, the nearest point (=inhabited building) in the same statistical sector. But (in some rare cases) if this point is too far away, we choose a point closer to the original point in another statistical sector, but always in the same LAU2 area.&lt;/li&gt;
+&lt;li&gt;Grid cells are recalculated based on the perturbated points. After that, the dataset is aggregated again.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Of course, the result of this method depends on the confidentiality rules used in step (1). We have tested this method where we started from different confidentiality rules, used in step 1 and we've compared the results with each other. These rules in step 1 are criteria based on frequency counts in grid cells such as number of people, number of households and the other frequency counts by grid cell we have to deliver to Eurostat in 2024.&amp;nbsp;We compared relatively mild criteria with more severe criteria. After analysing the results, the conclusion was that one of the mildest criteria was sufficient for the protection of confidential data. Keeping the detailed rules secret is an important aspect to prevent anyone from being able to undo the protection.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="REL_POLICY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;23 December 2022&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_CAL_ACCESS">
+                    <genericmetadata:Value>&lt;p&gt;23 December 2022&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REL_POL_US_AC">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_COND">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="ACCESS_LIM">
+                        <genericmetadata:Value>&lt;p&gt;&lt;a href="https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"&gt;https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply&lt;/a&gt;&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="FREQ_DISS">
+                <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCESSIBILITY_CLARITY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="NEWS_REL">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;.gpkg &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;.gml&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUBLICATIONS">
+                    <genericmetadata:Value>&lt;p&gt;not yet available&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ONLINE_DB">
+                    <genericmetadata:Value>&lt;p&gt;not yet available&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="MICRO_DAT_ACC">
+                    <genericmetadata:Value>&lt;p&gt;According to the Belgian statistical law of 4 July 1962, researchers have access to microdata.&amp;nbsp;It concerns pseudonymised data. Researchers can submit an application to the DPO committee of statbel. Based on the principles of finality and proportionality (described in Belgian law), an assessment is made for researcher's application.&lt;/p&gt;
+&lt;p&gt;Finality =&amp;nbsp;clear description of the purpose for which the data will be used. The researcher can only use the data for the purposes discribed in his application.&lt;/p&gt;
+&lt;p&gt;Proportionality =&amp;nbsp;The researcher can only request the data that are really necessary for his research. (e.g. if the researcher only needs data on NUTS 3 level, he can't obtain data on LAU 2 level)&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>URL</common:AnnotationType>
+                            <common:AnnotationTitle>access to microdata for research</common:AnnotationTitle>
+                            <common:AnnotationURL>https://statbel.fgov.be/en/about-statbel/what-we-do/microdata-research</common:AnnotationURL>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DISS_OTHER">
+                    <genericmetadata:Value>&lt;p&gt;not available&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DOC_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;See 18.5 data compilation&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_DOC">
+                    <genericmetadata:Value>&lt;p&gt;See link.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>URL</common:AnnotationType>
+                            <common:AnnotationTitle>Information on quality</common:AnnotationTitle>
+                            <common:AnnotationURL>https://statbel.fgov.be/en/about-statbel/quality</common:AnnotationURL>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="QUALITY_MGMNT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSURE">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="LINEAGE">
+                        <genericmetadata:Value>&lt;p&gt;See attached file in 11.2 Quality management - assessment. There was a longitudinal comparison between grid files.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_SPEC">
+                        <genericmetadata:Value>&lt;p&gt;The grid cells are conform with the definition of&amp;nbsp;ETRS89-LAEA.&lt;/p&gt;
+&lt;p&gt;Population counts are conform with the definition of usual residence.&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="CONF_DEGREE">
+                        <genericmetadata:Value>&lt;p&gt;See 11.1.2&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="QUALITY_ASSMNT">
+                    <genericmetadata:Value>&lt;p&gt;For the grid data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Additivity of population figures and surface data were checked.&lt;/li&gt;
+&lt;li&gt;Comparison&amp;nbsp;was performed with the demographic statistics already published.&amp;nbsp;The numbers match exactly. The total area is comparable with cadastre results.&lt;/li&gt;
+&lt;li&gt;For each grid cell, the values of 2021 were compared with the grid in 2016. The differences are very&amp;nbsp;acceptable.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span&gt;Inside&lt;/span&gt;&lt;em&gt;&amp;nbsp;Statistics Belgium&lt;/em&gt;&lt;span&gt;, a service which is independent of the service responsible for producing figures, is responsible for the final quality management of the data. Each year there is a survey that has to be filled in for all statistics that evaluates the different quality dimensions of the statistic.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>FILE</common:AnnotationType>
+                            <common:AnnotationTitle>Quality check grid data 2021</common:AnnotationTitle>
+                            <common:AnnotationText>Annexes/CENSUS_INS21ES_A_BE_2021_0000_an1.png</common:AnnotationText>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="RELEVANCE">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="USER_NEEDS">
+                    <genericmetadata:Value>&lt;p&gt;There are differenct working groups and task forces with different kind of users.&lt;/p&gt;
+&lt;p&gt;Each year the different users inside the IIS (Interfederal Institute for Statistics) can submit projects to improve statistics, develop new statistics or can ask to add new information in existing statistics.&lt;/p&gt;
+&lt;p&gt;There are also multiple task forces with researchers to discuss this.&lt;/p&gt;
+&lt;p&gt;In the high council of statistics, the most important stakeholders come together to follow up the statistical production. Specific working groups can be established if some new needs are expressed or&amp;nbsp;if a reform of a particular statistic is necessary.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="USER_SAT">
+                    <genericmetadata:Value>&lt;p&gt;See attached link.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>URL</common:AnnotationType>
+                            <common:AnnotationTitle>satisfaction survey</common:AnnotationTitle>
+                            <common:AnnotationURL>https://statbel.fgov.be/fr/propos-de-statbel/qualite/enquete-de-satisfaction</common:AnnotationURL>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPLETENESS">
+                    <genericmetadata:Value>&lt;p&gt;not available&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="ACCURACY">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="ACCURACY_OVERALL">
+                    <genericmetadata:Value>&lt;p&gt;Highly accurate.&lt;/p&gt;
+&lt;p&gt;Statbel uses the concept of usual residence and tries to deduce this from the data in the population register. The population register disposes of longitudinal information. Therefore, we have information of moving citizens. Based on that information, it's possible to see if condition (i) of the definition of usual resident population is satisfied:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"(i) those who have lived in their place of usual residence for a continuous period of at least 12 months before the reference date"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indeed, we can check whether someone lives already for 12 months in Belgium.&lt;/p&gt;
+&lt;p&gt;It's more difficult to see if condition (ii) is satisfied:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"(ii) those who arrived in their place of usual residence during the 12 months before the reference date with the intention of staying there for at least one year"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;In the population register, we have no information on the&amp;nbsp;&lt;strong&gt;&lt;em&gt;intention&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;&amp;nbsp;&lt;/em&gt;to stay. But, based on the records with information of moving citizens in the months after the reference date, it is possible to estimate this.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Remarks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This differs from the figures statbel publishes on its own website,&amp;nbsp;where the registered population is used at midnight 31 December 2020 (=1st January 2021). Moreover, asylum seekers are included in the figures we submit to Eurostat which isn't the case in our national publications.&lt;/li&gt;
+&lt;li&gt;Both census statistics and demography use the same reference moment and data source (population register). As a consequence, the demographic part of the census is consistent with the demographic statistics published earlier.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once the usual resident population is determined, we can precise with more geographical detail the usual residence. Municipality codes are available in the population register. Therefore, all levels NUTS1,2,3 and LAU2 can be derived from that information. To see in which km² grid cell the citizen has his/her usual residence, we use the address from the population register.&lt;/p&gt;
+&lt;p&gt;There is a geocoding of these addresses in what we call the CSAB file established by Statbel.&lt;/p&gt;
+&lt;p&gt;In a first step we require that members of the same household are attributed to the same geographical point. Therefore, it is important to determine the household id's before a grid cell id can be allocated. The composition of the households is also derived from information in the population register. Here, we distinguish between private households and collective living quarters. Private households are mainly determined based on information of the reference person in the household, whereas collective living quarters are determined by the information in the address.&lt;/p&gt;
+&lt;p&gt;To establish the CSAB file (geocode the addresses), the information in the population register has to be compared with geographical data coming form databases from the 3 regions (each NUTS 1 region has his own database).&amp;nbsp;There is an automated step first. To compare addresses between the population register and the geographical data, intelligent algorithms are used as e.g. based on TF-IDF methods. Sometimes the exact address isn't available as such in one of the geographical registers. e.g. for a given street we have nr. 20 in the population register, but in the geographical databases we have nr. 18 and nr. 22. In those cases geographical interpolation can be used to estimate the geographical coordinates. In some other cases extrapolation can be used.&lt;/p&gt;
+&lt;p&gt;After that there is a manual step to geocode the rest of the addresses whereby geographical coordinates where not found in the automated step.&lt;/p&gt;
+&lt;p&gt;The CSAB file is updated each year with all new addresses. In the Belgian geographical databases, Lambert 72 (EPSG:31370) projection system is used. To attribute a grid ID, this is converted to the ETRS89 / LAEA Europe (EPSG:3035) system.&lt;/p&gt;
+&lt;p&gt;It is difficult to mention the exact accuracy of the geographical points, since this can change from address to address. Interpolated and extrapolated points are far less precise than addresses available in the original geographical databases. But the overall accuracy is very precise. Addresses in the original geographical databases are precise to the metre and sometimes even more detailed. Only 0,32% of the addresses is inter- or extrapolated. Exceptionally, it can be less precise for some extrapolated points. Mostly, only for points very near to the border of 2 different grid cells there is a very small risk the address is allocated to the wrong grid cell.&lt;/p&gt;
+&lt;p&gt;For the km² grid, not only population figures were supplied, but also land surface data. In most cases this is exactly 1 km². For border and coastal areas, the area was computed based on a GIS intersection of the GRID layer with the layer of the official Belgian borders both converted to the ETRS89 projection. Moreover, areas of water bodies such as lakes were subtracted from the initial surface. This information is estimated based on Corine Land Cover 2018 data.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="SAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="NONSAMPLING_ERR">
+                    <genericmetadata:Value>&lt;p&gt;not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="TIMELINESS_PUNCT">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="TIMELINESS">
+                    <genericmetadata:Value>&lt;p&gt;See subcategories&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_PUB">
+                        <genericmetadata:Value>&lt;p&gt;23 December 2022&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_LAST_REV">
+                        <genericmetadata:Value>2022-12-23</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                    <genericmetadata:ReportedAttribute conceptID="DATE_CREATION">
+                        <genericmetadata:Value>2022-12-23</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="PUNCTUALITY">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Grid data for total population was delivered on time before the deadline of 31 December 2022.&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COHER_COMPAR">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_GEO">
+                    <genericmetadata:Value>&lt;p&gt;See 15.1.1&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:ReportedAttribute conceptID="GEO_QUALITY">
+                        <genericmetadata:Value>&lt;p&gt;In all regions of Belgium, the data of the geographical databases are very precise. In most cases more precisely than one metre. See also 13.1&lt;/p&gt;</genericmetadata:Value>
+                    </genericmetadata:ReportedAttribute>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COMPAR_TIME">
+                    <genericmetadata:Value>&lt;p&gt;A comparison check was executed. See attached file in 11.2&amp;nbsp;&lt;span id="conceptName" class="bold"&gt;Quality management - assessment.&lt;/span&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_X_DOM">
+                    <genericmetadata:Value>&lt;p&gt;not applicable&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COHER_INTERNAL">
+                    <genericmetadata:Value>&lt;p&gt;There is exact coherence with the already published population statistics.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COST_BURDEN">
+                <genericmetadata:Value>&lt;p&gt;Not yet available.&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="DATA_REV">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="REV_POLICY">
+                    <genericmetadata:Value>&lt;p&gt;See attached link.&lt;/p&gt;</genericmetadata:Value>
+                    <genericmetadata:Annotations>
+                        <common:Annotation>
+                            <common:AnnotationType>URL</common:AnnotationType>
+                            <common:AnnotationTitle>revision policy</common:AnnotationTitle>
+                            <common:AnnotationURL>https://statbel.fgov.be/en/about-statbel/quality/revision-policy</common:AnnotationURL>
+                        </common:Annotation>
+                    </genericmetadata:Annotations>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="REV_PRACTICE">
+                    <genericmetadata:Value>&lt;p&gt;See 17.1.&lt;/p&gt;
+&lt;p&gt;The grid data will be each year a one shot. Census data and population statistics have the same reference date and uses the same administrative sources for the demographic part. As a consequence, no revisions are needed.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="STAT_PROCESS">
+                <genericmetadata:Value></genericmetadata:Value>
+                <genericmetadata:ReportedAttribute conceptID="SOURCE_TYPE">
+                    <genericmetadata:Value>&lt;p&gt;To establish the grid data, the Belgian population register was used.&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="FREQ_COLL">
+                    <genericmetadata:Value>&lt;p&gt;Decennial&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="COLL_METHOD">
+                    <genericmetadata:Value>&lt;p&gt;See 18.1&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_VALIDATION">
+                    <genericmetadata:Value>&lt;p&gt;&lt;span&gt;Inside&lt;/span&gt;&lt;em&gt;&amp;nbsp;Statistics Belgium&lt;/em&gt;&lt;span&gt;, a service which is independent of the service responsible for producing figures, is responsible for the final validation of the data. Internal validation procedures have been set up in order to ensure consistency between all hypercubes and grid data. An external evaluation was also carried out. The aim is, on the one hand, to ensure that the statistics produced are part of a time trend or, if interruptions are found, that these are the consequence of specific, cyclical socio-economic factors. Furthermore, the figures set out in the grid cells were compared with the already published population statistics.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So following checks were executed for the grid statistics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Additivity of population figures and surface data were checked.&lt;/li&gt;
+&lt;li&gt;Comparison&amp;nbsp;was performed with the demographic statistics already published.&amp;nbsp;The numbers match exactly. The total area is comparable with cadastre results.&lt;/li&gt;
+&lt;li&gt;For each grid cell, the values of 2021 were compared with the grid in 2016. The differences are very&amp;nbsp;acceptable.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="DATA_COMP">
+                    <genericmetadata:Value>&lt;table class="TblBottom" style="width: 99%;" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="Cl-Content"&gt;
+&lt;p&gt;To see in which km² grid cell the citizen has his/her usual residence, we use the address from the population register.&lt;/p&gt;
+&lt;p&gt;There is a geocoding of these addresses in what we call the CSAB file established by Statbel.&lt;/p&gt;
+&lt;p&gt;In a first step we require that members of the same household are attributed to the same geographical point. Therefore, it is important to determine the household id's before a grid cell id can be allocated. The composition of the households is also derived from information in the population register. Here, we distinguish between private households and collective living quarters. Private households are mainly determined based on information of the reference person in the household, whereas collective living quarters are determined by the information in the address.&lt;/p&gt;
+&lt;p&gt;To establish the CSAB file (geocode the addresses), the information in the population register has to be compared with geographical data coming form databases from the 3 regions (each NUTS 1 region has his own database).&amp;nbsp;There is an automated step first. To compare addresses between the population register and the geographical data, intelligent algorithms are used as e.g. based on TF-IDF methods. Sometimes the exact address isn't available as such in one of the geographical registers. e.g. for a given street we have nr. 20 in the population register, but in the geographical databases we have nr. 18 and nr. 22. In those cases geographical interpolation can be used to estimate the geographical coordinates. In some other cases extrapolation can be used.&lt;/p&gt;
+&lt;p&gt;After that there is a manual step to geocode the rest of the addresses whereby geographical coordinates where not found in the automated step.&amp;nbsp;A possible example of a manual treatment is an address on the corner of 2 streets where the population register allocated one street, but the geographical registers the other street. The geographical coordinates can be found by consulting a map.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The CSAB file is updated each year with all new addresses. In the Belgian geographical databases, Lambert 72 (EPSG:31370) projection system is used. To attribute a grid ID, this is converted to the ETRS89 / LAEA Europe (EPSG:3035) system.&lt;/p&gt;
+&lt;p&gt;For the km² grid, not only population figures were supplied, but also land surface data. In most cases this is exactly 1 km². For border and coastal areas, the area was computed based on a GIS intersection of the GRID layer with the layer of the official Belgian borders both converted to the ETRS89 projection. Moreover, areas of water bodies such as lakes were subtracted from the initial surface. This information is estimated based on Corine Land Cover 2018 data.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="Cl-Level3"&gt;&lt;a name="accuracy_overall_sex"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+                <genericmetadata:ReportedAttribute conceptID="ADJUSTMENT">
+                    <genericmetadata:Value>&lt;p&gt;not available&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</genericmetadata:Value>
+                </genericmetadata:ReportedAttribute>
+            </genericmetadata:ReportedAttribute>
+            <genericmetadata:ReportedAttribute conceptID="COMMENT_DSET">
+                <genericmetadata:Value>&lt;p&gt;3.3.2. We dispose download service and view service.&lt;/p&gt;
+&lt;p&gt;Is there a problem to indicate several answers?&lt;/p&gt;</genericmetadata:Value>
+            </genericmetadata:ReportedAttribute>
+        </genericmetadata:AttributeValueSet>
+        <genericmetadata:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </genericmetadata:Annotations>
+    </genericmetadata:MetadataSet>
+</GenericMetadata>
