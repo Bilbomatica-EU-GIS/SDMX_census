@@ -38,7 +38,7 @@ def main():
     else:
         print ("This is not a correct file format: " + inputfile)
         quit()
-    if (df):
+    if ('df' in globals()):
         # Creates metadata file
         if df['AREA_OF_DISSEMINATION'].iat[0] == 'EU':
             createMetadataEUWide()
@@ -91,7 +91,7 @@ def getShapefile():
     shp_gpd = gpd.read_file(read_shp,
     include_fields = ['GRD_ID','CNTR_ID'])
     #Drops the undesired columns
-    shp_gpd.drop(columns=['TOT_P_2018','Country','Date','Method','Shape_Leng','Shape_Area','OBJECTID','CNTR_ID'],inplace= True)
+    shp_gpd.drop(columns=['fid','DIST_BORD','TOT_P_2018','TOT_P_2006','TOT_P_2011','Y_LLC','CNTR_ID','NUTS2016_3','NUTS2016_2','NUTS2016_1','NUTS2016_0','LAND_PC','X_LLC','DIST_COAST'],inplace= True)
     #Set GRD_ID as index
     shp = shp_gpd.set_index('GRD_ID')
     print ("Shapefile readed")
