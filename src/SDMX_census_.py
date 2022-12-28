@@ -11,14 +11,21 @@ import zipfile
 import argparse
 
 
+# --- Arguments parser --- #
+parser = argparse.ArgumentParser(description='Some input arguments needed to run this script.')
+parser.add_argument('-d','--inputData', help='Path to input file. The input file can be a CSV or SDMX file (required)', required=True)
+parser.add_argument('-m','--inputMetaData', help='Path to input metadata file (required)', required=True)
+parser.add_argument('-b','--baseURL', help='Url where dissemination packages will be stored after creating them (optional)', default='https://gisco-services.ec.europa.eu/pub/census/')
+args = parser.parse_args()
+
 # --- Entry parameters --- #
-inputfile = "./INPUT/CSV/DK_ESTAT_DF_CENSUS_GRID_2021_2.0.csv"
+inputfile = args.inputData
 # Metadata parameters
-inputMetadataFile = "./INPUT/Metadata/CENSUS_INS21ES_A_DK_2021_0000.sdmx.xml"
+inputMetadataFile = args.inputMetaData
 countriesBoundingBox = "./INPUT/JRC_COUN_EXTENTS/JRC_COUNTRIES_extent.xml"
 metadataTemplate_filename = "./INPUT/Templates/CENSUS_Countries_Metadata_template.xml"
 metadataTemplateEUWide_filename = "./INPUT/Templates/CENSUS_EUWIDE_Metadata_template.xml"
-base_url = "https://gisco-services.ec.europa.eu/pub/census/"
+base_url = args.baseURL
 output_filename = "CENSUS_INS21ES_A_{country_code}_2021_0000"
 #ZIP global variables
 zipped_filenames = []
@@ -27,7 +34,7 @@ atomTemplate_filename = "./INPUT/Templates/CENSUS_ATOMFeed_template.atom"
 
 def main():
     '''Based on user input file and selected output format, it runs a different function'''
-    global countryCode, start_date, extension
+    global extension
     lists()
     # Creates output files
     extension = inputfile[-3:]
@@ -86,12 +93,10 @@ def readCSV():
 
 def getShapefile():
     '''Reads Shapefile and converts it into a pandas geodataframe'''
-    read_shp = 'INPUT/JRC_POP_SHP/JRC_POPULATION_2021.shp'
-    #read_shp= gpd.read_file(shp)
-    shp_gpd = gpd.read_file(read_shp,
-    include_fields = ['GRD_ID','CNTR_ID'])
+    read_shp = './INPUT/JRC_POP_SHP/JRC_POPULATION_2021_exported.shp'
+    shp_gpd = gpd.read_file(read_shp, include_fields = ['GRD_ID'])
     #Drops the undesired columns
-    shp_gpd.drop(columns=['fid','DIST_BORD','TOT_P_2018','TOT_P_2006','TOT_P_2011','Y_LLC','CNTR_ID','NUTS2016_3','NUTS2016_2','NUTS2016_1','NUTS2016_0','LAND_PC','X_LLC','DIST_COAST'],inplace= True)
+    #shp_gpd.drop(columns=['fid','DIST_BORD','TOT_P_2018','TOT_P_2006','TOT_P_2011','Y_LLC','CNTR_ID','NUTS2016_3','NUTS2016_2','NUTS2016_1','NUTS2016_0','LAND_PC','X_LLC','DIST_COAST'],inplace= True)
     #Set GRD_ID as index
     shp = shp_gpd.set_index('GRD_ID')
     print ("Shapefile readed")
@@ -659,7 +664,7 @@ def createAtomFeed(df):
     #ATOM link
     atomLink_temp = atomRoot_temp.xpath("//*[local-name() = 'link']")
     if (len(atomLink_temp) > 0):
-        atomLink_temp[0].set('href', base_url + "ATOMFeed_"+country_code+".atom")
+        atomLink_temp[0].set('href', base_url + "CENSUS_ATOMFeed_"+country_code+".atom")
     #Entry link
     entryLink_temp = atomRoot_temp.xpath("//*[local-name() = 'link']")
     if (len(entryLink_temp) > 1):
@@ -676,7 +681,7 @@ def createAtomFeed(df):
         entrySummary_temp[0].text = entrySummary_value
     # ATOM feed completed
     atomFeedComplet = etree.tostring(atomRoot_temp, xml_declaration=True, encoding="utf-8")
-    outputAtomFile = "./OUTPUT/ATOMFeed_"+country_code+".atom"
+    outputAtomFile = "./OUTPUT/CENSUS_ATOMFeed_"+country_code+".atom"
     with open(outputAtomFile, "wb") as f:
         f.write(atomFeedComplet)
         print ("ATOM feed created")

@@ -408,7 +408,7 @@ The multiplicity of this element is 1.-->
       <gmd:lineage>
         <gmd:LI_Lineage>
           <gmd:statement>
-            <gco:CharacterString>The geopackage is produced by joining the 2018 population grid provided by EUROSTAT(https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with the census data sent by the different EU countries at national level.</gco:CharacterString>
+            <gco:CharacterString>The geopackage is produced by joining the 2021 population grid provided by EUROSTAT(https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with the census data sent by the different EU countries at national level.</gco:CharacterString>
           </gmd:statement>
         </gmd:LI_Lineage>
       </gmd:lineage>
