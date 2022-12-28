@@ -30,7 +30,7 @@ python -m pip install geopandas
     * '-d','--inputData': Path to input file. The input file can be a CSV or SDMX file (required)
     * '-m','--inputMetaData': Path to input metadata file (required)
     * '-b','--baseURL': Url where dissemination packages will be stored after creating them (optional)
-These are two examples to execute python script with the arguments:
+* These are two examples to execute python script with the arguments:
 ```
 python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./INPUT/Metadata/CENSUS_INS21ES_A_DK_2021_0000.sdmx.xml
 ```
@@ -40,7 +40,7 @@ python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./
 
 ## Help
 
-If you need more information about the arguments, run this python: 
+If you need more information about the arguments, run this line code: 
 ```
 python SDMX_census_.py -h
 ```
@@ -52,4 +52,4 @@ python SDMX_census_.py -h
 
 ## License
 
-This project is licensed under the GISCO Eurostat, European Commission License [estat-gisco@ec.europa.eu](estat-gisco@ec.europa.eu)
+This project is licensed under the GISCO Eurostat, European Commission License [estat-gisco@ec.europa.eu](mailto:estat-gisco@ec.europa.eu)
