@@ -36,6 +36,19 @@ python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./
 python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./INPUT/Metadata/CENSUS_INS21ES_A_DK_2021_0000.sdmx.xml -b https://gisco-services.ec.europa.eu/pub/census/
 ```
 
+## Supporting script
+
+Added a new python script to join the country CSV files to create the EU input file. This new script is located in "./src-mergingCSVCountriesToEU/" folder.
+
+### Executing suppoorting script
+
+* Copy the CSV files of all the countries you want to merge into "./src-mergingCSVCountriesToEU/INPUT/" folder.
+* Run the python script
+```
+python ./src-mergingCSVCountriesToEU/joinCSVCountries.py
+```
+* The EU Wide CSV merged file will be saved in "./src-mergingCSVCountriesToEU/OUTPUT/" folder.
+
 ## Help
 
 If you need more information about the arguments, run this line code: 
@@ -45,6 +58,10 @@ python SDMX_census_.py -h
 
 ## Version History
 
+* 1.2
+    * Added supporting python script to merge input CSV of countries and create the EU Wide CSV file
+* 1.1
+    * Updated INSPIRE metadata files generation
 * 1.0
     * Initial Release
 
