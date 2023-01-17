@@ -180,25 +180,6 @@ For each INSPIRE Spatial Data Theme, a gmd:keyword element shall be included wit
           </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:descriptiveKeywords>
-
-<!--TG Requirement C.18: metadata/2.0/req/common/conditions-for-access-and-use: Conditions for access and use of the described resource shall be described using exactly one gmd:resourceConstraints/gmd:MD_LegalConstraints element. This element shall not be the same used for describing limitations on public access (see 2.4.6).
-The gmd:resourceConstraints/gmd:MD_LegalConstraints element for conditions for access and use shall be encoded as follows:
-One instance of either gmd:accessConstraints or gmd:useConstraints element shall be given. In both cases this element shall contain a gmd:MD_RestrictionCode element with code list value "otherRestrictions".
-Additionally at least one instance of gmd:otherConstraints shall be given describing the actual conditions.
-If no conditions apply the gmd:otherConstraints shall include a gmx:Anchor element pointing to the value "noConditionsApply" in the code list ConditionsApplyingToAccessAndUse.
-If the conditions are unknown gmd:otherConstraints shall include a gmx:Anchor element pointing to the value "conditionsUnknown" in the code list ConditionsApplyingToAccessAndUse.
-In other cases gmd:otherConstraints shall include a Non-empty Free Text Element with a textual description of the conditions in the language of the metadata. This text shall include descriptions of terms and conditions, including where applicable, the corresponding fees or an URL pointing to an online resource where these terms and conditions are described.-->	  	  
-	   
-	  <gmd:resourceConstraints>
-         <gmd:MD_LegalConstraints>
-             <gmd:useConstraints>
-                 <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions"/>
-             </gmd:useConstraints>
-           <gmd:otherConstraints>
-					   <gco:CharacterString></gco:CharacterString>
-           </gmd:otherConstraints>
-         </gmd:MD_LegalConstraints>
-      </gmd:resourceConstraints>
 	   
 	  
 <!--TG Requirement C.17: metadata/2.0/req/common/limitations-on-public-access: Limitations on public access (or lack of such limitations) for the described resource shall be described using exactly one gmd:resourceConstraints/gmd:MD_LegalConstraints element. This element shall not be the same one as used for describing conditions applying to access and use (see 2.4.7).
@@ -215,7 +196,42 @@ The limitations on public access (or lack of such limitations) based on reasons 
          </gmd:MD_LegalConstraints>
       </gmd:resourceConstraints>
 	  
+	  
+  <!--TG Requirement C.18: metadata/2.0/req/common/conditions-for-access-and-use: Conditions for access and use of the described resource shall be described using exactly one gmd:resourceConstraints/gmd:MD_LegalConstraints element. This element shall not be the same used for describing limitations on public access (see 2.4.6).
+The gmd:resourceConstraints/gmd:MD_LegalConstraints element for conditions for access and use shall be encoded as follows:
+One instance of either gmd:accessConstraints or gmd:useConstraints element shall be given. In both cases this element shall contain a gmd:MD_RestrictionCode element with code list value "otherRestrictions".
+Additionally at least one instance of gmd:otherConstraints shall be given describing the actual conditions.
+If no conditions apply the gmd:otherConstraints shall include a gmx:Anchor element pointing to the value "noConditionsApply" in the code list ConditionsApplyingToAccessAndUse.
+If the conditions are unknown gmd:otherConstraints shall include a gmx:Anchor element pointing to the value "conditionsUnknown" in the code list ConditionsApplyingToAccessAndUse.
+In other cases gmd:otherConstraints shall include a Non-empty Free Text Element with a textual description of the conditions in the language of the metadata. This text shall include descriptions of terms and conditions, including where applicable, the corresponding fees or an URL pointing to an online resource where these terms and conditions are described.-->	  	  
 	   
+	  <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode
+                      codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">
+                </gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+			
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href=""></gmx:Anchor>
+            </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+	  
+	  <gmd:resourceConstraints>
+         <gmd:MD_LegalConstraints>
+             <gmd:useConstraints>
+                 <gmd:MD_RestrictionCode 
+				     codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">
+				 </gmd:MD_RestrictionCode>
+             </gmd:useConstraints>
+			 
+           <gmd:otherConstraints>
+				 <gmx:Anchor xlink:href=""></gmx:Anchor>
+           </gmd:otherConstraints>
+         </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
 	   
 	<!-- Not mandatory. For interoperability --> 
        <gmd:spatialRepresentationType>

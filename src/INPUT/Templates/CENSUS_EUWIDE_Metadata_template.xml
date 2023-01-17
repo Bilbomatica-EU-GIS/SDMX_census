@@ -295,7 +295,7 @@ yyyy is the year, mm is the month and dd is the day).-->
               <gmd:extent>
                 <gml:TimePeriod gml:id="IDcd3b1c4f-b5f7-439a-afc4-3317a4cd89be">
                   <gml:beginPosition></gml:beginPosition>
-                  <gml:endPosition indeterminatePosition="unknown" />
+                  <gml:endPosition>2022-12-31</gml:endPosition>	
                 </gml:TimePeriod>
               </gmd:extent>
             </gmd:EX_TemporalExtent>
@@ -318,10 +318,32 @@ Not mandatory. For interoperability-->
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>Geopackage file(.gpkg)</gco:CharacterString>
+						<gco:CharacterString>Geopackage file (.gpkg)</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
                         <gco:CharacterString>1.3.1</gco:CharacterString>
+                    </gmd:version>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+
+      <gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>Statistical Data and Metadata eXchange (.sdmx)</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+                        <gco:CharacterString>3.0</gco:CharacterString>
+                    </gmd:version>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>Geography Markup Language (.gml)</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+                        <gco:CharacterString>3.3</gco:CharacterString>
                     </gmd:version>
 				</gmd:MD_Format>
 			</gmd:distributionFormat>
@@ -408,7 +430,7 @@ The multiplicity of this element is 1.-->
       <gmd:lineage>
         <gmd:LI_Lineage>
           <gmd:statement>
-            <gco:CharacterString>The geopackage is produced by joining the 2021 population grid provided by EUROSTAT(https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/population-distribution-demography/geostat) with the census data sent by the different EU countries at national level.</gco:CharacterString>
+            <gco:CharacterString>The dataset is produced by joining the 2021 population grid provided by EUROSTAT at https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/grids (downloading options: 1km and Polygon) with the census data sent by the different EU countries at national level. Before the join operation of the reference grid with the census data, the reference grid tabular data is cleaned, and all the fields are removed except for the GRD_ID field. For detailed lineage please refer to the individual metadata files from the respective countries.</gco:CharacterString>
           </gmd:statement>
         </gmd:LI_Lineage>
       </gmd:lineage>

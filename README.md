@@ -1,6 +1,4 @@
-# Project Title
-
-SDMX Infrastructure - CENSUS script conversion
+# SDMX Infrastructure - CENSUS script conversion
 
 ## Description
 

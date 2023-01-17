@@ -431,21 +431,40 @@ def createMetadataCountries(df):
     if (len(resourcecontactMail_temp) > 0):
         resourcecontactMail_temp[0].text = resourcecontactMail_value
     #Use constraints
-    useConstraitPolicy_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONF_POLICY']/genericmetadata:Value", namespaces=NAMESPACES_input)
-    useConstraitDataTR_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONF_DATA_TR']/genericmetadata:Value", namespaces=NAMESPACES_input)
-    useConstraitPolicy_value = ""
-    useConstraitDataTR_value = ""
-    if (len(useConstraitPolicy_node) > 0):
-        useConstraitPolicy_value = cleanMetadataValues(useConstraitPolicy_node[0].text,"String",None)
+    useConstraitAccessCond_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='ACCESS_COND']/genericmetadata:Value", namespaces=NAMESPACES_input)
+    useConstraitAccessLim_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='ACCESS_LIM']/genericmetadata:Value", namespaces=NAMESPACES_input)
+    useConstraitAccessCond_valueLink = ""
+    useConstraitAccessLim_valueLink = ""
+    useConstraitAccessCond_valueText = ""
+    useConstraitAccessLim_valueText = ""
+    if (len(useConstraitAccessCond_node) > 0):
+        matchUrl = re.findall('"([^"]*)"', useConstraitAccessCond_node[0].text)
+        if (len(matchUrl) > 0):
+            useConstraitAccessCond_valueLink = matchUrl[0]
     else:
         print("Use constraints node not found")
-    if (len(useConstraitDataTR_node) > 0):
-        useConstraitDataTR_value = cleanMetadataValues(useConstraitDataTR_node[0].text,"String",None)
+    if (len(useConstraitAccessLim_node) > 0):
+        matchUrl = re.findall('"([^"]*)"', useConstraitAccessLim_node[0].text)
+        if (len(matchUrl) > 0):
+            useConstraitAccessLim_valueLink = matchUrl[0]
     else:
         print("Use constraints node not found")
-    useConstrait_temp = metadata_temp.xpath('//gmd:useConstraints//following-sibling::gmd:otherConstraints/gco:CharacterString', namespaces=NAMESPACES_temp)
-    if (len(useConstrait_temp) > 0):
-        useConstrait_temp[0].text = useConstraitPolicy_value + useConstraitDataTR_value
+    if ("conditionsUnknown" in useConstraitAccessCond_valueLink):
+        useConstraitAccessCond_valueText = "The conditions applying to access and use are unknown"
+    else:
+        useConstraitAccessCond_valueText = "No conditions apply to access and use"
+    if ("conditionsUnknown" in useConstraitAccessLim_valueLink):
+        useConstraitAccessLim_valueText = "The conditions applying to access and use are unknown"
+    else:
+        useConstraitAccessLim_valueText = "No conditions apply to access and use"
+    useConstraitAccessCond_temp = metadata_temp.xpath('//gmd:accessConstraints//following-sibling::gmd:otherConstraints/gmx:Anchor', namespaces=NAMESPACES_temp)
+    if (len(useConstraitAccessCond_temp) > 1):
+        useConstraitAccessCond_temp[1].attrib['{%s}href' % NAMESPACES_temp['xlink']] = useConstraitAccessCond_valueLink
+        useConstraitAccessCond_temp[1].text = useConstraitAccessCond_valueText
+    useConstraitAccessLim_temp = metadata_temp.xpath('//gmd:useConstraints//following-sibling::gmd:otherConstraints/gmx:Anchor', namespaces=NAMESPACES_temp)
+    if (len(useConstraitAccessLim_temp) > 0):
+        useConstraitAccessLim_temp[0].attrib['{%s}href' % NAMESPACES_temp['xlink']] = useConstraitAccessLim_valueLink
+        useConstraitAccessLim_temp[0].text = useConstraitAccessLim_valueText
     #Geographic bounding box
     xMin_node = countriesBoundBox.xpath("//CountryId[text()='"+country_code+"']//following-sibling::xMin")
     xMax_node = countriesBoundBox.xpath("//CountryId[text()='"+country_code+"']//following-sibling::xMax")
@@ -503,10 +522,14 @@ def createMetadataCountries(df):
     lineageColl_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='COLL_METHOD']/genericmetadata:Value", namespaces=NAMESPACES_input)
     lineageDataVal_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='DATA_VALIDATION']/genericmetadata:Value", namespaces=NAMESPACES_input)
     lineageAccuOverall_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='ACCURACY_OVERALL']/genericmetadata:Value", namespaces=NAMESPACES_input)
+    lineageConfPolicy_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONF_POLICY']/genericmetadata:Value", namespaces=NAMESPACES_input)
+    lineageConfData_node = metadata_input.xpath("//genericmetadata:ReportedAttribute[@conceptID='CONF_DATA_TR']/genericmetadata:Value", namespaces=NAMESPACES_input)
     lineageDoc_value = ""
     lineageColl_value = ""
     lineageDataVal_value = ""
     lineageAccuOverall_value = ""
+    lineageConfPolicy_value = ""
+    lineageConfData_value = ""
     if (len(lineageDoc_node) > 0):
         lineageDoc_value = cleanMetadataValues(lineageDoc_node[0].text,"String",None)
     else:
@@ -523,9 +546,17 @@ def createMetadataCountries(df):
         lineageAccuOverall_value = cleanMetadataValues(lineageAccuOverall_node[0].text,"String",None)
     else:
         print("Lineage accu overall node not found")
+    if (len(lineageConfPolicy_node) > 0):
+        lineageConfPolicy_value = cleanMetadataValues(lineageConfPolicy_node[0].text,"String",None)
+    else:
+        print("Lineage conf policy node not found")
+    if (len(lineageConfData_node) > 0):
+        lineageConfData_value = cleanMetadataValues(lineageConfData_node[0].text,"String",None)
+    else:
+        print("Lineage conf data node not found")
     lineage_temp = metadata_temp.xpath('//gmd:lineage//gco:CharacterString', namespaces=NAMESPACES_temp)
     if (len(lineage_temp) > 0):
-        lineages_value = lineageDoc_value + lineageColl_value + lineageDataVal_value + lineageAccuOverall_value
+        lineages_value = lineageDoc_value + lineageColl_value + lineageDataVal_value + lineageAccuOverall_value + lineageConfPolicy_value + lineageConfData_value
         lineages_value = html.unescape(lineages_value)
         lineage_temp[0].text = lineages_value
 
@@ -594,12 +625,17 @@ def cleanMetadataValues(meta_value,value_format,email_order):
             meta_value = d.strftime('%Y-%m-%d')
         except:
             meta_value = "2021-01-01" #default value in case of there is not a valid date
-    elif (value_format == "Email"):
+    elif (value_format == "Email"): #search mails
         matchMails = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', meta_value)
         if (len(matchMails) > 0):
             meta_value = matchMails[0]
             if (email_order == 2 and len(matchMails) == email_order):
                 meta_value = matchMails[1]
+    elif (value_format == "URL"): #search URLs
+        regexUrl = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+        matchURLs = re.findall(regexUrl, meta_value)
+        if (len(matchURLs) > 0):
+            meta_value = matchURLs[0]
     return meta_value
 
 # Function to get the xml root
