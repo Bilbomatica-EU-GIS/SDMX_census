@@ -40,7 +40,7 @@ python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./
 
 Added a new python script to join the country CSV files to create the EU input file. This new script is located in "./src-mergingCSVCountriesToEU/" folder.
 
-### Executing suppoorting script
+### Executing supporting script
 
 * Copy the CSV files of all the countries you want to merge into "./src-mergingCSVCountriesToEU/INPUT/" folder.
 * Run the python script
