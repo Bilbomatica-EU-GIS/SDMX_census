@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" xml:lang="en">
+  <id></id>
+  <title>Statistical Units</title>
+  <updated></updated>
+  <author>
+    <name>GISCO Eurostat, European Commission</name>
+    <email>estat-gisco@ec.europa.eu</email>
+  </author>
+  <link href="" rel="up" type="application/atom+xml" hreflang="en" title="ATOM FEED"/>
+  <rights>© European Union, 2021</rights>
+</feed>

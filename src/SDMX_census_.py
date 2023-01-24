@@ -29,8 +29,6 @@ base_url = args.baseURL
 output_filename = "CENSUS_INS21ES_A_{country_code}_2021_0000"
 #ZIP global variables
 zipped_filenames = []
-#ATOM feed parameters
-atomTemplate_filename = "./INPUT/Templates/CENSUS_ATOMFeed_template.atom"
 
 def main():
     '''Based on user input file and selected output format, it runs a different function'''
@@ -53,8 +51,6 @@ def main():
             createMetadataCountries(df)
         # Compressing output file
         zipAllFiles(df)
-        # Creates ATOM feed file
-        createAtomFeed(df)
 
 
 def lists():
@@ -663,64 +659,6 @@ def zipAllFiles(df):
     # close the Zip File
     zipObj.close()
     print("ZIP file created")
-
-# Function to create the ATOM feed
-def createAtomFeed(df):
-    print("Creating ATOM feed...")
-    atomRoot_temp = getXMLRoot(atomTemplate_filename)
-    NAMESPACESAtom_temp = atomRoot_temp.nsmap
-    if (None in NAMESPACESAtom_temp.keys()):
-        NAMESPACESAtom_temp.pop(None) #to remove all None namespaces
-    #ATOM feed values
-    country_code = df['AREA_OF_DISSEMINATION'].iat[0]
-    actualDate_atom = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
-    url_atom = base_url + output_filename.replace("{country_code}",country_code)
-
-    # Completing ATOM feed
-    #ATOM date
-    atomDate_temp = atomRoot_temp.xpath("//*[local-name() = 'updated']")
-    if (len(atomDate_temp) > 0):
-        atomDate_temp[0].text = actualDate_atom
-    #Entry date
-    entryDate_temp = atomRoot_temp.xpath("//*[local-name() = 'updated']")
-    if (len(entryDate_temp) > 1):
-        entryDate_temp[1].text = actualDate_atom
-    #ATOM id
-    atomId_temp = atomRoot_temp.xpath("//*[local-name() = 'id']")
-    if (len(atomId_temp) > 0):
-        atomId_temp[0].text = url_atom
-    #Entry id
-    entryId_temp = atomRoot_temp.xpath("//*[local-name() = 'id']")
-    if (len(entryId_temp) > 1):
-        entryId_temp[1].text = url_atom
-    #Entry title
-    entryTitle_temp = atomRoot_temp.xpath("//*[local-name() = 'title']")
-    if (len(entryTitle_temp) > 1):
-        entryTitle_temp[1].text = "CENSUS - " + country_code
-    #ATOM link
-    atomLink_temp = atomRoot_temp.xpath("//*[local-name() = 'link']")
-    if (len(atomLink_temp) > 0):
-        atomLink_temp[0].set('href', base_url + "CENSUS_ATOMFeed_"+country_code+".atom")
-    #Entry link
-    entryLink_temp = atomRoot_temp.xpath("//*[local-name() = 'link']")
-    if (len(entryLink_temp) > 1):
-        entryLink_temp[1].set('href', url_atom + ".zip")
-        entryTitleLink_value = entryLink_temp[1].get('title')
-        entryTitleLink_value = entryTitleLink_value.replace("{country_code}",country_code)
-        entryLink_temp[1].set('title', entryTitleLink_value)
-    #Entry summary
-    entrySummary_temp = atomRoot_temp.xpath("//*[local-name() = 'summary']")
-    if (len(entrySummary_temp) > 0):
-        entrySummary_value = entrySummary_temp[0].text
-        entrySummary_value = entrySummary_value.replace("{country_code}",country_code)
-        entrySummary_value = entrySummary_value.replace("{url_zip}",url_atom + ".zip")
-        entrySummary_temp[0].text = entrySummary_value
-    # ATOM feed completed
-    atomFeedComplet = etree.tostring(atomRoot_temp, xml_declaration=True, encoding="utf-8")
-    outputAtomFile = "./OUTPUT/CENSUS_ATOMFeed_"+country_code+".atom"
-    with open(outputAtomFile, "wb") as f:
-        f.write(atomFeedComplet)
-        print ("ATOM feed created")
 
 
 if __name__ == "__main__":
