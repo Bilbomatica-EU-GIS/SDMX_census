@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://a9.com/-/spec/opensearch/1.1/ OpenSearch.xsd">
+    <ShortName>INSPIRE DATA</ShortName>
+    <Description>Search Engine</Description>
+    <!--URL de este documento-->
+    <Url type="application/opensearchdescription+xml" rel="self" template="http://localhost:8080/ATOM/opensearchdescription.xml"/>
+    <!--Plantilla para la integración en los navegadores-->
+    <Url type="text/html" rel="results" template="http://localhost:8080/ATOM/search.php?q={searchTerms}"/>
+    <!--Plantilla de la operación Get Spatial Data Set a usar para recuperar un conjunto de datos-->
+	<Url type="application/zip" rel="results" template="http://localhost:8080/ATOM/search.php?spatial_dataset_identifier_code={inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace={inspire_dls:spatial_dataset_identifier_namespace?}&amp;crs={inspire_dls:crs?}&amp;language={language?}&amp;country={country?}&amp;q={searchTerms?}"/>    
+	<!--Plantilla de la operación Describe Spatial Data Set a usar para recuperar la descripción de tipos de objetos espaciales de un conjunto de datos-->
+	<Url type="application/atom+xml" rel="describedby" template="http://localhost:8080/ATOM/search.php?spatial_dataset_identifier_code={inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace={inspire_dls:spatial_dataset_identifier_namespace?}&amp;crs={inspire_dls:crs?}&amp;language={language?}&amp;q={searchTerms?}"/>    
+    <Contact>{Contact}</Contact>
+    <Tags>INSPIRE</Tags>
+    <!--<LongName></LongName>-->
+    <!--Lista de identificadores de conjuntos de datos-->
+    <Query role="example" inspire_dls:spatial_dataset_identifier_namespace="{namespace}" inspire_dls:spatial_dataset_identifier_code="{code}" inspire_dls:crs="http://www.opengis.net/def/crs/EPSG/0/3035" language="en" country="CH" title="Population Distribution and Demography - CH" count="1" />
+	<Query role="example" inspire_dls:spatial_dataset_identifier_namespace="{namespace}" inspire_dls:spatial_dataset_identifier_code="{code}" inspire_dls:crs="http://www.opengis.net/def/crs/EPSG/0/3035" language="en" country="CH" title="Statistical Units - CH" count="1" />
+    <!--<Developer></Developer>-->
+    <!--Idiomas soportados por el servicio. El primero es el idioma por defecto-->
+    <Language>en</Language>
+</OpenSearchDescription>
