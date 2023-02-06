@@ -22,9 +22,9 @@ readme_name = "readme.md"
 atom_file_name = 'PD'
 atom_title = 'Population Distribution and Demography'
 base_url = 'http://localhost:8080/ATOM/'
-metadata_suffix = '_GRID_2021_MD.xml'
-suffix = '.gml'
-suffix2 = '.gpkg'
+metadata_suffix = '.xml'
+suffix = ['.gml', '.gpkg']
+
 country_code_dict = {
     "EUROPE":"Europe",    
     "AL":"Albania",
@@ -130,7 +130,6 @@ def check_target_dir(folder):
     if(os.path.isdir(folder)):
         shutil.rmtree(folder)       
     os.makedirs(folder)
-    os.makedirs(folder + os.sep + 'Metadata')  
     return folder  
 
 def generate_data(root_folder):   
@@ -141,9 +140,10 @@ def generate_data(root_folder):
 
     for root,dirs,files in os.walk(root_folder, topdown=True):   
         files.sort()       
-        for filename in files:                       
+        for filename in files: 
+            split_tup=os.path.splitext(filename)
             target_filename_country_code = root.split(os.path.sep)[-1]           
-            if (filename.lower().endswith(suffix.lower()) and target_filename_country_code.upper() in country_code_dict.keys() and not (target_filename_country_code in country_zipped_list)): 
+            if (split_tup[1].lower() in suffix and target_filename_country_code.upper() in country_code_dict.keys() and not (target_filename_country_code in country_zipped_list)):
                 target_readme_path = os.path.join(root, readme_name)
                 generate_readme(template_path_file, target_filename_country_code, target_readme_path)
                 target_path_name = os.path.join(target_folder, target_filename_country_code + "_" + atom_file_name + zip_name)
@@ -156,41 +156,9 @@ def generate_data(root_folder):
                     country_atom_added_list.append(target_filename_country_code)
                     feed_entry_object_list[target_filename_country_code] = fe
                     file_code_name_dict[target_filename_country_code] = filename
+    
                     
-                    
-            elif (filename.lower().endswith(suffix2.lower()) and target_filename_country_code.upper() in country_code_dict.keys() and not (target_filename_country_code in country_zipped_list)):
-                target_readme_path = os.path.join(root, readme_name)
-                generate_readme(template_path_file, target_filename_country_code, target_readme_path)
-                target_path_name = os.path.join(target_folder, target_filename_country_code + "_" + atom_file_name + zip_name)
-                zipDir(root, (target_path_name + '.zip'))                            
-                country_zipped_list.append(target_filename_country_code) 
-                if (target_filename_country_code in country_atom_added_list and not file_code_name_dict[target_filename_country_code].split("_")[0] == filename.split("_")[0]):               
-                    change_feed_entry (feed_entry_object_list[target_filename_country_code], target_filename_country_code, filename)
-                elif not target_filename_country_code in country_atom_added_list:
-                    fe = generate_feed_entry(target_filename_country_code, filename)
-                    country_atom_added_list.append(target_filename_country_code)
-                    feed_entry_object_list[target_filename_country_code] = fe
-                    file_code_name_dict[target_filename_country_code] = filename 
-                
-                
-            
-                      
-            if (filename.lower().endswith(metadata_suffix.lower()) and (atom_file_name.upper() in filename.upper())):                   
-                metadata_path_name = os.path.join((target_folder + os.sep + 'Metadata'), filename)
-                root_path_name = os.path.join((root), filename)                              
-                try:
-                    shutil.copy2(os.path.join(root,filename), metadata_path_name)    
-                    print("Copy Metadata file to metadata_path_name: " + metadata_path_name + ", from root_path_name: " + root_path_name) 
-                except IOError as e:
-                    print("Skipped copy as " + str(e)) 
-                    pass                         
-                if  (target_filename_country_code in country_atom_added_list and not file_code_name_dict[target_filename_country_code].split("_")[0] == filename.split("_")[0]):
-                    change_feed_entry(feed_entry_object_list[target_filename_country_code], target_filename_country_code, filename)
-                elif not target_filename_country_code in country_atom_added_list: 
-                    fe = generate_feed_entry(target_filename_country_code, filename)
-                    country_atom_added_list.append(target_filename_country_code)
-                    feed_entry_object_list[target_filename_country_code] = fe
-                    file_code_name_dict[target_filename_country_code] = filename
+           
 
 def zipSinglefile(target_path_name, root_path, file_to_zip):  
     zip_file = zipfile.ZipFile(target_path_name + '.zip', 'w')
@@ -199,12 +167,15 @@ def zipSinglefile(target_path_name, root_path, file_to_zip):
 
 def zipDir(dirPath, zipPath):
     try:
+        suffix = ['.gml', '.gpkg', '.xml']
         zipf = zipfile.ZipFile(zipPath , mode='w')
         lenDirPath = len(dirPath)
         for root, _ , files in os.walk(dirPath):
-            for file in files:               
-                filePath = os.path.join(root, file)
-                zipf.write(filePath , filePath[lenDirPath :], compress_type=zipfile.ZIP_DEFLATED )
+            for file in files:  
+                split_tup=os.path.splitext(file)            
+                if split_tup[1].lower() in suffix:    
+                    filePath = os.path.join(root, file)
+                    zipf.write(filePath , filePath[lenDirPath :], compress_type=zipfile.ZIP_DEFLATED )
         print("Create zip in target_path_name: " + zipPath + ", from folder: " + dirPath) 
     except IOError as e:
         print("Skipped zip as " + str(e)) 
@@ -228,7 +199,7 @@ def generate_feed_main():
     fg.link(href=base_url + "ATOM.atom", rel="up", type="application/atom+xml", hreflang="es", title="ATOM FEED" )       
     fg.id(base_url + atom_file_name +'/' + atom_file_name +'.atom')
     fg.rights('{Copyrights}')  
-    date = datetime.datetime(2019, 5, 21, 12, 0, 0, 0, pytz.UTC)
+    date = datetime.datetime(datetime.date.today().year, datetime.date.today().month, datetime.date.today().day, 0, 0, 0, 0, pytz.UTC)
     fg.updated(date)      
     fg.link(rel="describedby", href="http://inspire.ec.europa.eu/featureconcept/StatisticalDistribution", type="text/html", title="Statistical Distribution")       
     fg.author({'name':'(Author)','email':'{Contact}'})        
@@ -236,17 +207,17 @@ def generate_feed_main():
 def generate_feed_entry(country_code, filename):    
     fe = fg.add_entry(feedEntry=None, order='append')        
     fe.category(term="http://www.opengis.net/def/crs/EPSG/0/3035", label="ETRS89 / LAEA Europe")
-    date = datetime.datetime(2023, 2, 1, 12, 0, 0, 0, pytz.UTC)
+    date = datetime.datetime(datetime.date.today().year, datetime.date.today().month, datetime.date.today().day, 0, 0, 0, 0, pytz.UTC)
     fe.updated(date)
     fe.title(country_code_dict[country_code.upper()])
-    entry_data = (base_url + atom_file_name +'/Data/' + filename).replace("_MD.xml",".gml")
-    entry_metadata = (base_url  + atom_file_name +'/Metadata/' + filename).replace(".gml","_MD.xml")
-    entry_zip = base_url + atom_file_name +'/Data/' + country_code + "_" + atom_file_name + zip_name + '.zip' 
+    entry_data = (base_url + atom_file_name +'/Data/' + filename).replace(".gml","")
+    entry_metadata = (base_url  + '/.xml')
+    entry_zip = base_url + entry_data+'.zip' 
     entry_img = base_url + 'img/'+ country_code_dict[country_code.upper()] + '.png'
     fe.id(entry_data)
     entry_title = atom_title + ' - ' + country_code     
     entry_metadata_href = 'b&gt;Metadata:&lt;/b&gt; &lt;a href="' + entry_metadata + '" target="_blank" &gt; Link &lt;/a&gt;&lt;/div&gt;'
-    fe.link(rel="alternate", href=entry_zip, type="application/gml+xml", length="0", hreflang="en", title=entry_title)   
+    fe.link(rel="alternate", href=entry_zip, type="application/gml+xml+gpkg", length="0", hreflang="en", title=entry_title)   
     entry_summary = '&lt;div&gt;&lt;div&gt;ZIP file containing information about the ' + atom_title + ' in '+ country_code_dict[country_code.upper()] + '.&lt;/br&gt;&lt;div&gt;&lt;b&gt;Formats:&lt;/b&gt; &lt;i&gt;GML,GPKG&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;'+ entry_metadata_href +'&lt;div&gt;&lt;a href="' + entry_zip +'" &gt; Download &lt;/a&gt;&lt;/div&gt;&lt;img width="100px" vspace="10" border="1" src="'+ entry_img + '" alt="'+ country_code_dict[country_code.upper()] +'" title="' + country_code_dict[country_code.upper()] +'"&gt;&lt;/div&gt;'
     fe.summary(entry_summary)   
     return fe
@@ -255,8 +226,8 @@ def remove_feed_entry(fe):
     fg.remove_entry(fe)
 
 def change_feed_entry(fe, country_code, filename):  
-    entry_metadata = (base_url  + atom_file_name +'/Metadata/' + filename).replace(".gml","_MD.xml")
-    entry_zip = base_url + atom_file_name +'/Data/' + country_code + "_" + atom_file_name + zip_name + '.zip' 
+    entry_metadata = (base_url  + '/.xml')
+    entry_zip = base_url + entry_data+'.zip' 
     entry_metadata_href = 'b&gt;Metadata:&lt;/b&gt; &lt;a href="' + entry_metadata + '" target="_blank" &gt; Link &lt;/a&gt;&lt;/div&gt;'
     entry_img = base_url + 'img/'+ country_code_dict[country_code.upper()] + '.png'
     entry_summary = '&lt;div&gt;&lt;div&gt;ZIP file containing information about the ' + atom_title + ' in '+ country_code_dict[country_code.upper()] + '.&lt;/br&gt;&lt;div&gt;&lt;b&gt;Formats:&lt;/b&gt; &lt;i&gt;GML, Shapefile, CSV, Geopackage&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;'+ entry_metadata_href +'&lt;div&gt;&lt;a href="' + entry_zip +'" &gt; Download &lt;/a&gt;&lt;/div&gt;&lt;img width="100px" vspace="10" border="1" src="'+ entry_img + '" alt="'+ country_code_dict[country_code.upper()] +'" title="' + country_code_dict[country_code.upper()] +'"&gt;&lt;/div&gt;'
