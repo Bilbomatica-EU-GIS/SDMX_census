@@ -88,7 +88,7 @@ def readCSV():
         if f in df.columns:
             df[f] = df[f].astype(float)
             
-    #df['OBS_VALUE'] = df['OBS_VALUE'].replace('nan',0)
+    df['OBS_VALUE'] = df['OBS_VALUE'].replace('nan', '0').astype(float).astype(int)
     
     df['OBS_VALUE'] = df['OBS_VALUE'].astype(int)
     EU_or_Country(df)
@@ -98,18 +98,14 @@ def readCSV():
 
 def getShapefile():
     '''Reads Shapefile and converts it into a pandas geodataframe'''
-    print('Execution time9: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     read_shp = './INPUT/JRC_POP_SHP/JRC_POPULATION_2021_exported.shp'
-    print('Execution time10: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     shp_gpd = gpd.read_file(read_shp, include_fields = ['GRD_ID'])
-    print('Execution time11: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
+ 
     #Drops the undesired columns
     #shp_gpd.drop(columns=['fid','DIST_BORD','TOT_P_2018','TOT_P_2006','TOT_P_2011','Y_LLC','CNTR_ID','NUTS2016_3','NUTS2016_2','NUTS2016_1','NUTS2016_0','LAND_PC','X_LLC','DIST_COAST'],inplace= True)
     #Set GRD_ID as index
     shp = shp_gpd.set_index('GRD_ID')
-    print('Execution time12: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     print ("Shapefile readed")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     return shp
 
 def EU_or_Country(df):
@@ -155,29 +151,19 @@ def EUwide(df):
 def duplicateSTAT(df):
     '''The observation fields are multiplied by STAT values before creating the geopackage'''
     print ("Reading shapefile...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     if df['Flag'].iat[0] == 0: #1 for EU, and 0 for countries
         df['GRD_ID'] = df['SPATIAL'].str.split('_').str[1]
-        print('Execution time0: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df['STAT_'] = df['STAT'] + '_'
-    print('Execution time1: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df = df.replace('',np.nan, regex=True)
     #The OBS_VALUE is placed in the STAT + observation field, depending on the value of STAT
-    print('Execution time2: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df =  pd.concat([df, pd.DataFrame(data={s+o: np.where(df['STAT_'] == s , df[o], np.NaN) for s in stat_values for o in observations})], axis = 1)
-    print('Execution time3: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df.drop(['STAT_','STAT'],axis = 1, inplace= True)
     #Drop observation fields, SPATIAL and flag fields
-    print('Execution time4: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df.drop(observations,axis = 1, inplace= True)
-    print('Execution time5: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df.drop(columns=['SPATIAL'],inplace= True)
-    print('Execution time6: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     df.drop(columns=['Flag'],inplace= True)
-    print('Execution time7: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     #Replace empty cells with NULLs
     df = df.replace(' ',np.nan, regex=True)
-    print('Execution time8: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     create_gpkg_gml(getShapefile(),df)
 
 
@@ -243,12 +229,12 @@ def readSDMX():
 def create_gpkg_gml(shp,df):
     '''Joins te geodataframe previously created with the dataframe, and exports the result as geopackage'''
     print ("Creating geopackage file...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     
     df.set_index('GRD_ID', inplace=True)
     df.sort_index(inplace=True)
     
-    shp2gpck = gpd.GeoDataFrame(df.merge(shp, on ='GRD_ID'))
+    df2=df.copy()   
+    shp2gpck = gpd.GeoDataFrame(df2.merge(shp, on ='GRD_ID'))
     gpck_cntr = shp2gpck['AREA_OF_DISSEMINATION'].values[0]
     outputGeopackage_filename = './OUTPUT/' + gpck_cntr + '_ESTAT_DF_CENSUS_GRID_2021_' + datetime.today().strftime('%Y%m%d%H%M%S') + '.gpkg'
     outputGml_filename = './OUTPUT/' + gpck_cntr + '_ESTAT_DF_CENSUS_GRID_2021_' + datetime.today().strftime('%Y%m%d%H%M%S') + '.gml'
@@ -258,18 +244,14 @@ def create_gpkg_gml(shp,df):
     zipped_filenames.append(outputxsd_filename)
     print("GPKG")
     shp2gpck.to_file(outputGeopackage_filename,driver = 'GPKG')
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     print("GML")
     shp2gpck.to_file(outputGml_filename,driver = 'GML')
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     print ('Geopackage file created')
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
         
 
 def df2SDMX(df):
     '''Builds a SDMX from dataframe data'''
     print ("Creating SDMX file...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     try:
         xmlTemplate_filename = './INPUT/Templates/CENSUS_SDMX_template.xml'
         tree = etree.parse(xmlTemplate_filename)
@@ -330,28 +312,24 @@ def df2SDMX(df):
     file = open(sdmxOutput_filename,'wb')
     file.write(xmlComplet)
     print ("SDMX file created")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
 
 
 # Creates SDMX file
 def SDMX2SDMX(df):
     '''Builds a SDMX from SDMX'''
     print ("Creating SDMX file...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     sdmx_country = df['AREA_OF_DISSEMINATION'].iat[0]
     sdmxOutput_filename = './OUTPUT/' + sdmx_country + '_sdmxoutput_ESTAT_DF_CENSUS_GRID_2021_' + datetime.today().strftime('%Y%m%d%H%M%S') + '.xml'
     zipped_filenames.append(sdmxOutput_filename) #zip this file
     file = inputfile
     shutil.copy(file, sdmxOutput_filename )
     print ("SDMX file created")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
 
 
 # Function to create the metadata per country
 def createMetadataCountries(df):
     country_code = df['AREA_OF_DISSEMINATION'].iat[0]
     print ("Creating metadata file for "+country_code+"...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     metadata_input = getXMLRoot(inputMetadataFile)
     countriesBoundBox = getXMLRoot(countriesBoundingBox)
     metadata_temp = getXMLRoot(metadataTemplate_filename)
@@ -365,15 +343,6 @@ def createMetadataCountries(df):
     # Adding values to Metadata
     #File Identifier
     identifier_node = metadata_input.xpath("//*[local-name() = 'ID']")
-    if (identifier_node is None):
-        print("identifier_node is None")
-    else:
-        print("identifier_node is NOT None")
-    for i in range(len(identifier_node)):
-        if identifier_node[i] is None:
-            print("identifier_node "+str(i)+" is None")
-        else:
-            print("identifier_node "+str(i)+" is NOT None")
     identifier_value = ""
     if (len(identifier_node) > 0):
         identifier_value = identifier_node[0].text
@@ -616,7 +585,6 @@ def createMetadataCountries(df):
         f.write(metadataComplet)
         zipped_filenames.append(outputMetadataFile) #zip this file
         print ("Metadata file for "+country_code+ " created")
-        print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     #Copy SDMX metadata
     outputMetadataSDMXFile = "./OUTPUT/" + output_filename.replace("{country_code}",country_code) + "_metadata.sdmx.xml"
     shutil.copy(inputMetadataFile, outputMetadataSDMXFile)
@@ -625,7 +593,6 @@ def createMetadataCountries(df):
 # Function to create the metadata for EU Wide
 def createMetadataEUWide():
     print ("Creating metadata file for EU Wide...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     metadataEU_temp = getXMLRoot(metadataTemplateEUWide_filename)
     NAMESPACESEU_temp = metadataEU_temp.nsmap
     if (None in NAMESPACESEU_temp.keys()):
@@ -663,7 +630,6 @@ def createMetadataEUWide():
     with open(outputMetadataFile, "wb") as f:
         f.write(metadataEUComplet)
         print ("Metadata file for EU Wide created")
-        print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
         zipped_filenames.append(outputMetadataFile) #zip this file
 
 
@@ -705,7 +671,6 @@ def getXMLRoot(xml_filename):
 # Function to create a ZIP file adding all generated files
 def zipAllFiles(df):
     print("Compressing all output files...")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
     country_code = df['AREA_OF_DISSEMINATION'].iat[0]
     zip_filename = output_filename.replace("{country_code}",country_code)
     # create a ZipFile object
@@ -715,10 +680,10 @@ def zipAllFiles(df):
         zipObj.write(zfilename, arcname=zfilename.replace("./OUTPUT/",""), compress_type=zipfile.ZIP_DEFLATED)
         #remove initial output file
         os.remove(zfilename)
+    zipObj.write(inputfile, arcname=inputfile.replace("./INPUT/",""), compress_type=zipfile.ZIP_DEFLATED)    
     # close the Zip File
     zipObj.close()
     print("ZIP file created")
-    print('Execution time: ' + str((time.time() - start_time)//60) + ' minutes, ' + str(round((time.time() - start_time)%60, 3)) + ' seconds')
 
 
 if __name__ == "__main__":
