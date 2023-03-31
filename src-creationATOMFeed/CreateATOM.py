@@ -14,13 +14,10 @@ import zipfile
 
 # Default variables values
 start_time = time.time()
-#root_folder= os.getcwd()
-#target_folder = root_folder + os.sep + '190530 PD'
 root_folder = os.getcwd() + os.sep +'INPUT'
 target_folder = os.getcwd() + os.sep +'OUTPUT'
 
 zip_name = '_3035'
-#template_path_file = os.getcwd() + os.sep + 'readme_template.md'
 template_path = os.getcwd() + os.sep + 'Templates'
 template_path_file_csv = template_path + os.sep + 'readme_template_csv.md'
 template_path_file_gpkg = template_path + os.sep + 'readme_template_gpkg.md'
@@ -72,7 +69,7 @@ country_code_dict = {
 }
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:],'hmz:i:o:',['help', 'root-folder=' , 'zip-name=', 'target-folder=', 'atom-name=', 'atom-title=', 'base-url=', 'readme-template-csv=', 'readme-template-gpkg=', 'readme-template-gml=', 'readme-template-sdmx='])
+    opts, args = getopt.getopt(sys.argv[1:],'hio:r:t:z:a:m:b:c:k:g:s:',['help', 'root-folder=' , 'target-folder=', 'zip-name=', 'atom-name=', 'atom-title=', 'base-url=', 'readme-template-csv=', 'readme-template-gpkg=', 'readme-template-gml=', 'readme-template-sdmx='])
 except getopt.GetoptError as err:
     print(err)
     print('python AtomDataGenerator.py --help')
@@ -80,7 +77,7 @@ except getopt.GetoptError as err:
 for opt, arg in opts:
     if opt in ('-h', '--help'):
         print('AtomDataGenerator\n')
-        print('Utility to compress the *.gml file into zip file under a directory recusivley, and generate the *.atom, then save zip files, metadata, *.atom in to a specified folder.\n')
+        print('Utility to compress the *.gml file into zip file under a directory recursively, and generate the *.atom, then save zip files, metadata, *.atom in to a specified folder.\n')
         print('python AtomDataGenerator.py [options]\n')
         print('Options:')
         print('    h, optional, --help')
@@ -90,10 +87,10 @@ for opt, arg in opts:
         print('    a, optional, default-value:\'PD\', --atom-name=ATOM file name')    
         print('    m, optional, default-value:\'Population Distribution and Demography\', --atom-title=ATOM title')  
         print('    b, optional, default-value:\'https://gisco-services.ec.europa.eu/pub/census/\', --base-url=base url')     
-        print('    rc, optional, default-value:\'current working directory/Templates/readme_template_csv.md\', --readme-template-csv=template location csv')
-        print('    rk, optional, default-value:\'current working directory/Templates/readme_template_gpkg.md\', --readme-template-gpkg=template location gpkg')
-        print('    rg, optional, default-value:\'current working directory/Templates/readme_template_gml.md\', --readme-template-gml=template location gml')
-        print('    rs, optional, default-value:\'current working directory/Templates/readme_template_sdmx.md\', --readme-template-sdmx=template location sdmx')
+        print('    c, optional, default-value:\'current working directory/Templates/readme_template_csv.md\', --readme-template-csv=template location csv')
+        print('    k, optional, default-value:\'current working directory/Templates/readme_template_gpkg.md\', --readme-template-gpkg=template location gpkg')
+        print('    g, optional, default-value:\'current working directory/Templates/readme_template_gml.md\', --readme-template-gml=template location gml')
+        print('    s, optional, default-value:\'current working directory/Templates/readme_template_sdmx.md\', --readme-template-sdmx=template location sdmx')
         print('Examples:')
         print('    default usage:')
         print('        python AtomDataGenerator.py')        
@@ -120,24 +117,24 @@ for opt, arg in opts:
         sys.exit()
     elif opt in ('-r', '--root-folder'):
         root_folder = arg
-    elif opt in ('-z', '--zip-name'):
-        zip_name = arg
     elif opt in ('-t', '--target-folder'):
         target_folder = arg
+    elif opt in ('-z', '--zip-name'):
+        zip_name = arg
     elif opt in ('-a', '--atom-name'):
         atom_file_name = arg
     elif opt in ('-m', '--atom-title'):
         atom_title = arg
     elif opt in ('-b', '--base-url'):
         base_url = arg  
-    elif opt in ('-rc', '--readme-template-csv'):
+    elif opt in ('-c', '--readme-template-csv'):
         template_path_file_csv = arg  
-    elif opt in ('-rk', '--readme-template-gpkg'):
+    elif opt in ('-k', '--readme-template-gpkg'):
         template_path_file_gpkg = arg  
-    elif opt in ('-rg', '--readme-template-gml'):
+    elif opt in ('-g', '--readme-template-gml'):
         template_path_file_gml = arg  
-    elif opt in ('-rs', '--readme-template-sdmx'):
-        template_path_file_sdmx = arg          
+    elif opt in ('-s', '--readme-template-sdmx'):
+        template_path_file_sdmx = arg     
 
 def check_root_dir(folder):     
     if(not os.path.isdir(folder)):        
@@ -263,13 +260,11 @@ def zipDir(dirPath, zipPath, suffix):
         pass
     print("RETURN zipDir\n")        
 
-def generate_feed_main():      
+def generate_feed_main():  
+    print("CALL generate_feed_main")    
     #fg.language('es') 
-    print("CALL generate_feed_main")
-    fg.title(atom_title)    
-    #fg.link(href=base_url + atom_file_name +'/' + atom_file_name +'.atom', rel="self", type="application/atom+xml", hreflang="en", title="This document" )     
+    fg.title(atom_title)         
     fg.link(href=base_url + atom_file_name +'.atom', rel="self", type="application/atom+xml", hreflang="en", title="This document" ) 
-    #fg.id(base_url + atom_file_name +'/' + atom_file_name +'.atom')
     fg.id(base_url + atom_file_name +'.atom')
     fg.rights('{Copyrights}')  
     date = datetime.datetime(datetime.date.today().year, datetime.date.today().month, datetime.date.today().day, 0, 0, 0, 0, pytz.UTC)
@@ -285,7 +280,6 @@ def generate_feed_entry(country_code, filename):
     fe.updated(date)
     fe.title(country_code_dict[country_code.upper()])
     print ("Country: " + str(country_code.upper()))
-    #entry_data = base_url + atom_file_name +'/Data/' +country_code.upper()+'_'+ atom_file_name + zip_name
     entry_data = base_url +'Data/' +country_code.upper()+'_'+ atom_file_name + zip_name
     entry_metadata = (base_url  + '/.xml')    
     target_path_name = os.path.join(target_folder, country_code.upper() + "_" + atom_file_name + zip_name)
