@@ -39,10 +39,10 @@ python SDMX_census_.py -d ./INPUT/CSV/CENSUS_GRID_N_DK_2021_0000_V0001.csv -m ./
 ```
 * When you have all the ZIP files of all the countries and you want to create the ATOM file and the corresponding GML, GPKG, SDMX and CSV and zip files, first copy all the ZIP files of the countries to the folder "./src-creationATOMFeed/INPUT/", unzip each zip to a folder and rename it to the corresponding country code.
 * Run the script "createATOM.py":
-    * '-r','--root-folder': Path folder where the country folders input are stored(optional)
-	* '-t','--target-folder': Path folder where the result output zip files and the atom files will be stored(optional)
+    * '-r','--root-folder': Path folder where the country folders input are stored (optional)
+	* '-t','--target-folder': Path folder where the result output zip files and the atom files will be stored (optional)
 	* '-z','--zip-name': Common part of the filename of the generated zip files (optional)
-	* '-a','--atom-name': Atom filename without extension  (optional)
+	* '-a','--atom-name': Atom filename without extension (optional)
 	* '-m','--atom-title': Title of the atom content (optional)
 	* '-b','--base-url': Url where dissemination packages will be stored after creating them (optional)
 	* '-c','--readme-template-csv': Path where the template for csv .md file is stored (optional)
